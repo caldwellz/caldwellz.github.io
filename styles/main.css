@@ -10,7 +10,10 @@ body {
 }
 
 h1 {
+    height: 4rem;
     font-size: 1.75rem;
+    text-align: center;
+    line-height: 4rem;
     color: whitesmoke;
 }
 
@@ -33,8 +36,8 @@ header, footer, footer a {
 }
 
 header img {
-    width: 200px;
-    height: auto;
+    border-radius: 100%;
+    border: 1px solid #084F96;
     float: right;
 }
 
