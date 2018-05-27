@@ -96,7 +96,7 @@ main figure iframe {
     height: 100%;
 }
 
-section.weather-info {
+.weather-info {
     overflow: auto;
     display: block;
     width: 98%;

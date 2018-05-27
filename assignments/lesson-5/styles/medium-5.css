@@ -12,7 +12,7 @@
         display: inline-block;
     }
 
-    section.weather-info {
+    .weather-info {
         display: block;
     }
 
