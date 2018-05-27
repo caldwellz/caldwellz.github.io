@@ -1,99 +1,119 @@
 <!DOCTYPE html>
 <html lang="en-us">
-<head> 
-  
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Weather site for Dayton-area paper airplane pilots and enthusiasts - Franklin page">
+    <title>Dayton Paper Pilots | Franklin Weather</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main-5.css">
+    <link rel="stylesheet" href="styles/medium-5.css">
+    <link rel="stylesheet" href="styles/large-5.css">
 </head>
+
 <body>
 
-  <header>
-  </header>
+    <header>
+        <img src="images/paper-airplane.svg" alt="Paper Airplane Logo" />
+        <h1>Dayton Paper Pilots</h1>
+        <h4>Finding the best Dayton-area paper airplane weather</h4>
+    </header>
 
-  <nav>
-    <ul>
-    	<li><a href="#">Home</a></li>
-    	<li><a href="#">Franklin</a></li>
-    	<li><a href="#">Greenville</a></li>
-    	<li><a href="#">Springfield</a></li>
-    	<li><a href="#">Storm Center</a></li>
-    	<li><a href="#">Gallery</a></li>
-    </ul>		
-  </nav>
-    
-  <main>
-    <h2>Page Title</h2>
-    <figure>
-    </figure>
-    <section class="weather-summary">
-      <h3>Weather Summary</h3>    
-      <div class="highlow">
-        <p>High:</p>  
-        <p>Low:</p>  
-      </div>
-      <div class="current">
-        Sunny
-        <picture>
-            <img src="images/#" alt="">
-        </picture>
-      </div>   
-      <div class="conditions">
-        <p>Precipitation:</p>  
-        <p>Wind Speed:</p>  
-      </div>           
-    </section>
-        
-    <section class="forecast">
-      <h3>Ten Day Forecast</h3>
-      <table>
-        <thead>
-          <tr>
-            <th>Day 1</th>
-            <th>Day 2</th>
-            <th>Day 3</th>
-            <th>Day 4</th>
-            <th>Day 5</th>
-            <th>Day 6</th>
-            <th>Day 7</th>
-            <th>Day 8</th>
-            <th>Day 9</th>
-            <th>Day 10</th>
-          </tr>
-	</thead>
-        <tbody>  
-          <tr>
-            <td>89&deg;F</td>
-            <td>87&deg;F</td>
-            <td>78&deg;F</td>
-            <td>75&deg;F</td>
-            <td>72&deg;F</td>
-            <td>72&deg;F</td>
-            <td>79&deg;F</td>
-            <td>83&deg;F</td>
-            <td>85&deg;F</td>
-            <td>89&deg;F</td>
-          </tr>
-	</tbody>
-      </table>
-    </section>
-      
-    <article>
-      <h3>Franklin Breaks Record</h3>	
-      <img src="">
-      <p class="town-article">
-      </p>
-    </article>		  
-  
-  </main>
-    
-  <footer>
-    <section class="contact">
-      Contact information placeholder
-      999.999.9999
-      123 Main St. Anytown, US 99999
-      Google Map
-    </section>
-    <section class="footer-bar">&copy;2018 | All Rights Reserved | Site Title | <span id="currentdate">Current Date Placeholder</span>
-    </section>
-  </footer>
+    <nav>
+        <button>&#9776;</button>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Franklin</a></li>
+            <li><a href="#">Greenville</a></li>
+            <li><a href="#">Springfield</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Franklin City</h2>
+        <br/>
+        <figure>
+            <iframe scrolling="no" src="https://www.openstreetmap.org/export/embed.html?bbox=-84.3515682220459%2C39.526090204236745%2C-84.25887107849123%2C39.58287017383472&amp;layer=mapnik"></iframe>
+        </figure>
+
+        <section class="weather-info">
+            <section class="weather-summary">
+                <h3>Weather Summary</h3>
+                <div class="highlow">
+                    <p id="hightemp"><b>High:</b> 89&deg;F</p>
+                    <p id="lowtemp"><b>Low:</b> 63&deg;F</p>
+                </div>
+                <div class="conditions">
+                    <p><b>Precipitation</b><br/>30%</p>
+                    <p><b>Wind Speed</b><br/>3 mph N</p>
+                </div>
+                <div class="current">
+                    <p><b>Current Conditions</b><br/>Partly Cloudy</p>
+                    <picture>
+                        <img src="images/partly-cloudy.svg" alt="Partly Cloudy">
+                    </picture>
+                </div>
+            </section>
+
+            <section class="forecast">
+                <h3>Ten Day Forecast</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Day 1</th>
+                            <th>Day 2</th>
+                            <th>Day 3</th>
+                            <th>Day 4</th>
+                            <th>Day 5</th>
+                            <th>Day 6</th>
+                            <th>Day 7</th>
+                            <th>Day 8</th>
+                            <th>Day 9</th>
+                            <th>Day 10</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>89&deg;F</td>
+                            <td>87&deg;F</td>
+                            <td>78&deg;F</td>
+                            <td>75&deg;F</td>
+                            <td>72&deg;F</td>
+                            <td>72&deg;F</td>
+                            <td>79&deg;F</td>
+                            <td>83&deg;F</td>
+                            <td>85&deg;F</td>
+                            <td>89&deg;F</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </section>
+        <article>
+            <h3>Franklin Breaks Record</h3>
+            <img src="http://lorempixel.com/300/200" width="400" height="200" alt="Lorem Pixel Image">
+            <p class="town-article">
+                <b>V</b>oluptatum aut laudantium voluptatem. Voluptate quia rem dolor. Laudantium enim delectus aut debitis sint. Culpa dolore ipsa alias sint ipsam facilis. Quia fugit dolores nihil aut.
+                Sint assumenda quasi distinctio perspiciatis harum autem nam amet. Molestiae minus esse magnam. Similique totam reiciendis ipsam iste. Consequatur quasi et et laborum qui aut. Ab fugit quis sed voluptate tempora enim dolore optio.
+                Architecto est beatae nobis tempora dignissimos totam. Facilis et vero veritatis. Quo consequuntur laborum et dolor aut cupiditate. Ut id ratione veritatis voluptas sed. Animi consequatur illum tempore.
+                Impedit eligendi excepturi ab. Delectus deserunt possimus voluptate doloribus dolores exercitationem. Et temporibus amet expedita reprehenderit ea. Sit sit excepturi quia animi natus quia. A itaque excepturi sit eius facere. Et eos cumque explicabo aliquid.
+                Veritatis et voluptates dolorem molestiae cum enim sint cupiditate. Ea amet voluptates ut ipsam. Non quo ut corporis hic aperiam fugit. Vero ut assumenda ipsa assumenda nihil earum.
+            </p>
+        </article>
+
+    </main>
+
+    <footer>
+        <section class="contact">
+            Contact information placeholder 999.999.9999 123 Main St. Anytown, US 99999 <a href="http://google.com/maps">Google Map</a>
+        </section>
+        <section class="footer-bar">&copy; 2018 | All Rights Reserved | Dayton Paper Pilots | <span id="currentdate">Current Date Placeholder</span>
+        </section>
+    </footer>
 
 </body>
+
 </html>
