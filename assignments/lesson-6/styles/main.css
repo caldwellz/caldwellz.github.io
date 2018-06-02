@@ -34,6 +34,7 @@ header .subheading {}
 
 nav {
     clear: both;
+    font-family: 'Montserrat', sans-serif;
 }
 
 nav button {
@@ -156,6 +157,7 @@ article img {
 }
 
 .town-article {
+    font-family: 'Montserrat', sans-serif;
     margin: 0.5rem;
 }
 
