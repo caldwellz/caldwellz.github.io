@@ -176,7 +176,7 @@ article img {
     font-size: 1.25rem;
 }
 
-footer {
+.footer-box {
     width: 98%;
     text-align: center;
     border: 2px solid black;
