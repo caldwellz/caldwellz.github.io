@@ -22,8 +22,8 @@
     </header>
 
     <nav>
-        <button>&#9776;</button>
-        <ul>
+        <button class="hamburger-button" onclick="toggleBurger()">&#9776;</button>
+        <ul class="navigation">
             <li><a href="#">Home</a></li>
             <li><a href="#">Franklin</a></li>
             <li><a href="#">Greenville</a></li>
@@ -35,7 +35,6 @@
 
     <main>
         <h2>Franklin City</h2>
-        <br/>
         <figure class="franklin-image">
             <img src="images/franklin-small.jpg" srcset="images/franklin-small.jpg 640w, images/franklin-medium.jpg 1024w, images/franklin-large.jpg 1360w" alt="Franklin Picture">
         </figure>
@@ -115,6 +114,7 @@
         </section>
     </footer>
 
+    <script type="text/javascript" src="scripts/hamburger.js"></script>
     <script type="text/javascript" src="scripts/currentdate.js"></script>
 </body>
 

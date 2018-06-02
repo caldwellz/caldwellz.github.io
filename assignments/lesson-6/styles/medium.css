@@ -1,15 +1,18 @@
 @media only screen and (min-width: 37.5em) {
-    nav button {
+    .hamburger-button {
         display: none;
     }
 
-    nav ul {
-    /*    position: fixed; */
-        width: 100%;
+    .navigation,
+    .navigation.responsive {
+  /*    position: fixed; */
+        display: block;
     }
 
-    nav ul li {
+    .navigation li,
+    .navigation.responsive li {
         display: inline-block;
+        border: none;
     }
 
     .weather-info {
