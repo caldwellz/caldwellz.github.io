@@ -126,6 +126,7 @@ nav ul li a {
 .location-image img {
     max-width: 100%;
     object-fit: contain;
+    border: 2px solid black;
 }
 
 .weather-info {
