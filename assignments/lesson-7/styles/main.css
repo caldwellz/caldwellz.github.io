@@ -15,6 +15,7 @@ body {
     max-width: 75rem;
     padding: 0.5rem;
     margin: auto;
+    background-color: #004d99;
 }
 
 .body-container > * {
@@ -22,11 +23,13 @@ body {
 }
 
 nav,
+.page-title,
 .weather-info,
 article,
 footer {
     margin-top: 0.5rem;
     width: 100%;
+    background-color: white;
 }
 
 h3,
@@ -39,6 +42,7 @@ header {
     grid-template-columns: 4rem auto;
     grid-template-rows: 1fr auto;
     grid-column-gap: 5px;
+    color: white;
 }
 
 header img {
@@ -59,14 +63,19 @@ header .subheading {
     grid-column: 2;
 }
 
-nav * {
+nav {
     background-color: #424242;
     color: white;
     text-align: center;
+}
+
+nav ul {
     list-style-type: none;
 }
 
 nav .hamburger-button {
+    background-color: inherit;
+    color: inherit;
     height: 2.5rem;
     width: 2.5rem;
 }
