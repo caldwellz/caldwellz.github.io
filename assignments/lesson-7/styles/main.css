@@ -11,7 +11,7 @@ body {
 
 .body-container {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column nowrap;
     max-width: 75rem;
     padding: 0.5rem;
     margin: auto;
@@ -112,6 +112,28 @@ nav ul li a {
     object-fit: contain;
 }
 
-main figure img {}
+.weather-info {
+    border: 2px solid black;
+    text-align: center;
+}
+
+.weather-info h3,
+.weather-info p {
+    margin: 0.5rem;
+}
+
+.dual-temp {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+.summary-block {
+    border-top: 2px dashed black;
+}
+
+section.forecast {
+    display: none;
+}
 
 footer {}

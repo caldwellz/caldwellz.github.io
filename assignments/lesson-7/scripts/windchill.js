@@ -1,7 +1,7 @@
 // Calculate and output windchill factor
 
-var high = parseFloat(document.getElementById("hightemp").innerHTML);
-var low = parseFloat(document.getElementById("lowtemp").innerHTML);
+var high = parseFloat(document.getElementById("highTempNum").innerHTML);
+var low = parseFloat(document.getElementById("lowTempNum").innerHTML);
 var mph = parseFloat(document.getElementById("windspeed").innerHTML);
 var avgTemp = (high + low) / 2;
 
