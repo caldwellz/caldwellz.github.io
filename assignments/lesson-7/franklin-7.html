@@ -14,107 +14,102 @@
 </head>
 
 <body>
+    <div class="body-container">
+        <header>
+            <img src="images/paper-airplane.svg" alt="Paper Airplane Logo" />
+            <h1>Dayton Paper Pilots</h1>
+            <br/>
+            <h4>Your source for Dayton-area paper airplane news and weather</h4>
+        </header>
 
-    <header>
-        <img src="images/paper-airplane.svg" alt="Paper Airplane Logo" />
-        <h1>Dayton Paper Pilots</h1>
-        <h4>Your source for Dayton-area paper airplane news and weather</h4>
-    </header>
+        <nav>
+            <button class="hamburger-button" onclick="toggleBurger()">&#9776;</button>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Franklin</a></li>
+                <li><a href="#">Greenville</a></li>
+                <li><a href="#">Springfield</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
 
-    <nav>
-        <button class="hamburger-button" onclick="toggleBurger()">&#9776;</button>
-        <ul class="navigation">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Franklin</a></li>
-            <li><a href="#">Greenville</a></li>
-            <li><a href="#">Springfield</a></li>
-            <li><a href="#">Storm Center</a></li>
-            <li><a href="#">Gallery</a></li>
-        </ul>
-    </nav>
+        <main>
+            <h2>Franklin City</h2>
+            <figure class="franklin-image">
+                <img src="images/franklin-small.jpg" srcset="images/franklin-small.jpg 640w, images/franklin-medium.jpg 1024w, images/franklin-large.jpg 1360w" sizes="98vw" alt="Franklin Picture">
+            </figure>
 
-    <main>
-        <h2>Franklin City</h2>
-        <figure class="franklin-image">
-            <img src="images/franklin-small.jpg" srcset="images/franklin-small.jpg 640w, images/franklin-medium.jpg 1024w, images/franklin-large.jpg 1360w" sizes="98vw" alt="Franklin Picture">
-        </figure>
+            <div class="weather-info">
+                <section class="weather-summary">
+                    <h3>Weather Summary</h3>
+                    <div class="highlow">
+                        <p><b>High: </b><span id="hightemp">65</span>&deg;F</p>
+                        <p><b>Low: </b><span id="lowtemp">25</span>&deg;F</p>
+                    </div>
+                    <div class="conditions">
+                        <p><b>Precipitation</b><br/>30%</p>
+                        <p><b>Wind Speed</b><br/><span id="windspeed">4</span> MPH N</p>
+                        <p><b>Wind Chill Factor</b><br/><span id="windchill"></span></p>
+                    </div>
+                    <div class="current">
+                        <p><b>Current Conditions</b><br/>Partly Cloudy</p>
+                        <picture>
+                            <img src="images/partly-cloudy.svg" alt="Partly Cloudy">
+                        </picture>
+                    </div>
+                </section>
 
-        <div class="weather-info">
-            <section class="weather-summary">
-                <h3>Weather Summary</h3>
-                <div class="highlow">
-                    <p><b>High: </b><span id="hightemp">65</span>&deg;F</p>
-                    <p><b>Low: </b><span id="lowtemp">25</span>&deg;F</p>
-                </div>
-                <div class="conditions">
-                    <p><b>Precipitation</b><br/>30%</p>
-                    <p><b>Wind Speed</b><br/><span id="windspeed">4</span> MPH N</p>
-                    <p><b>Wind Chill Factor</b><br/><span id="windchill"></span></p>
-                </div>
-                <div class="current">
-                    <p><b>Current Conditions</b><br/>Partly Cloudy</p>
-                    <picture>
-                        <img src="images/partly-cloudy.svg" alt="Partly Cloudy">
-                    </picture>
-                </div>
+                <section class="forecast">
+                    <h3>Ten Day Forecast</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Day 1</th>
+                                <th>Day 2</th>
+                                <th>Day 3</th>
+                                <th>Day 4</th>
+                                <th>Day 5</th>
+                                <th>Day 6</th>
+                                <th>Day 7</th>
+                                <th>Day 8</th>
+                                <th>Day 9</th>
+                                <th>Day 10</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>89&deg;F</td>
+                                <td>87&deg;F</td>
+                                <td>78&deg;F</td>
+                                <td>75&deg;F</td>
+                                <td>72&deg;F</td>
+                                <td>72&deg;F</td>
+                                <td>79&deg;F</td>
+                                <td>83&deg;F</td>
+                                <td>85&deg;F</td>
+                                <td>89&deg;F</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </div>
+            <article>
+                <h3>Franklin Breaks Record</h3>
+                <img src="https://placehold.it/300x200" width="300" height="200" alt="Lorem Pixel Image">
+                <p class="town-article">
+                    <b>V</b>oluptatum aut laudantium voluptatem. Voluptate quia rem dolor. Laudantium enim delectus aut debitis sint. Culpa dolore ipsa alias sint ipsam facilis. Quia fugit dolores nihil aut. Sint assumenda quasi distinctio perspiciatis harum autem nam amet. Molestiae minus esse magnam. Similique totam reiciendis ipsam iste. Consequatur quasi et et laborum qui aut. Ab fugit quis sed voluptate tempora enim dolore optio. Architecto est beatae nobis tempora dignissimos totam. Facilis et vero veritatis. Quo consequuntur laborum et dolor aut cupiditate. Ut id ratione veritatis voluptas sed. Animi consequatur illum tempore. Impedit eligendi excepturi ab. Delectus deserunt possimus voluptate doloribus dolores exercitationem. Et temporibus amet expedita reprehenderit ea. Sit sit excepturi quia animi natus quia. A itaque excepturi sit eius facere. Et eos cumque explicabo aliquid. Veritatis et voluptates dolorem molestiae cum enim sint cupiditate. Ea amet voluptates ut ipsam. Non quo ut corporis hic aperiam fugit. Vero ut assumenda ipsa assumenda nihil earum.
+                </p>
+            </article>
+        </main>
+
+        <footer>
+            <section class="footer-box">
+                Contact information placeholder 999.999.9999 123 Main St. Anytown, US 99999 <a href="http://google.com/maps">Google Map</a>
+                <br /> &copy; 2018 | All Rights Reserved | Dayton Paper Pilots | <span id="currentdate">Current Date Placeholder</span>
             </section>
-
-            <section class="forecast">
-                <h3>Ten Day Forecast</h3>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Day 1</th>
-                            <th>Day 2</th>
-                            <th>Day 3</th>
-                            <th>Day 4</th>
-                            <th>Day 5</th>
-                            <th>Day 6</th>
-                            <th>Day 7</th>
-                            <th>Day 8</th>
-                            <th>Day 9</th>
-                            <th>Day 10</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>89&deg;F</td>
-                            <td>87&deg;F</td>
-                            <td>78&deg;F</td>
-                            <td>75&deg;F</td>
-                            <td>72&deg;F</td>
-                            <td>72&deg;F</td>
-                            <td>79&deg;F</td>
-                            <td>83&deg;F</td>
-                            <td>85&deg;F</td>
-                            <td>89&deg;F</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-        </div>
-        <article>
-            <h3>Franklin Breaks Record</h3>
-            <img src="https://placehold.it/300x200" width="300" height="200" alt="Lorem Pixel Image">
-            <p class="town-article">
-                <b>V</b>oluptatum aut laudantium voluptatem. Voluptate quia rem dolor. Laudantium enim delectus aut debitis sint. Culpa dolore ipsa alias sint ipsam facilis. Quia fugit dolores nihil aut.
-                Sint assumenda quasi distinctio perspiciatis harum autem nam amet. Molestiae minus esse magnam. Similique totam reiciendis ipsam iste. Consequatur quasi et et laborum qui aut. Ab fugit quis sed voluptate tempora enim dolore optio.
-                Architecto est beatae nobis tempora dignissimos totam. Facilis et vero veritatis. Quo consequuntur laborum et dolor aut cupiditate. Ut id ratione veritatis voluptas sed. Animi consequatur illum tempore.
-                Impedit eligendi excepturi ab. Delectus deserunt possimus voluptate doloribus dolores exercitationem. Et temporibus amet expedita reprehenderit ea. Sit sit excepturi quia animi natus quia. A itaque excepturi sit eius facere. Et eos cumque explicabo aliquid.
-                Veritatis et voluptates dolorem molestiae cum enim sint cupiditate. Ea amet voluptates ut ipsam. Non quo ut corporis hic aperiam fugit. Vero ut assumenda ipsa assumenda nihil earum.
-            </p>
-        </article>
-
-    </main>
-
-    <footer>
-        <section class="footer-box">
-            Contact information placeholder 999.999.9999 123 Main St. Anytown, US 99999 <a href="http://google.com/maps">Google Map</a>
-            <br />
-            &copy; 2018 | All Rights Reserved | Dayton Paper Pilots | <span id="currentdate">Current Date Placeholder</span>
-        </section>
-    </footer>
-
+        </footer>
+    </div>
     <script type="text/javascript" src="scripts/hamburger.js"></script>
     <script type="text/javascript" src="scripts/currentdate.js"></script>
     <script type="text/javascript" src="scripts/windchill.js"></script>
