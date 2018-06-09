@@ -13,7 +13,8 @@ body {
     display: flex;
     flex-flow: row wrap;
     max-width: 75rem;
-    margin: 0.5rem;
+    padding: 0.5rem;
+    margin: auto;
 }
 
 .body-container > * {
@@ -102,13 +103,13 @@ nav ul li a {
     font-weight: bold;
 }
 
-main {}
+.franklin-image {
+    margin: 0.5rem auto;
+}
 
-main h2 {}
-
-main figure {
-    margin: 0 0 .2rem 2%;
-    width: 96%;
+.franklin-image img {
+    max-width: 100%;
+    object-fit: contain;
 }
 
 main figure img {}
