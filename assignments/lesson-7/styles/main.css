@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+}
+
+/* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    font-size: 16px;
+    font-family: Arial, Ubuntu, sans-serif;
+}
+
+header,
+nav,
+main,
+footer {
+    max-width: 75rem;
+}
+
+header {}
+
+header h1,
+header h4 {
+    margin: 0.3rem;
+}
+
+header img {
+    max-height: 4rem;
+    width: auto;
+    float: left;
+    margin: 0.3rem;
+}
+
+header .subheading {}
+
+nav {
+    clear: both;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hamburger-button {
+    background-color: #424242;
+    color: white;
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-left: 1%;
+}
+
+.navigation {
+    display: none;
+    background-color: #424242;
+    list-style-type: none;
+    text-align: center;
+    width: 98%;
+    padding-left: 0px;
+    margin: 0 auto;
+}
+
+.navigation.responsive {
+    display: block;
+}
+
+.navigation li {
+    display: none;
+    background-color: #424242;
+    color: white;
+    padding: 0.3rem;
+    border: 1px solid white;
+}
+
+.navigation.responsive li {
+    display: block;
+}
+
+.navigation li.active a {}
+
+.navigation li:hover,
+.navigation li:focus {
+    background-color: white;
+    color: #424242;
+}
+
+.navigation li a {
+    color: inherit;
+    text-decoration: none;
+}
+
+main {
+    overflow: auto;
+}
+
+main h2,
+main h3 {
+    text-align: center;
+    margin: 0.3rem;
+}
+
+.franklin-image {
+    display: block;
+    width: 98%;
+    margin: 0 auto 0.5rem auto;
+}
+
+.franklin-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.weather-info {
+    overflow: auto;
+    display: block;
+    width: 98%;
+    height: auto;
+    margin: auto;
+    border: 2px solid black;
+}
+
+section.weather-summary {
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+
+.highlow p {
+    display: inline-block;
+    font-size: 1.25rem;
+/*    font-weight: bold; */
+    width: 49%;
+    margin: 0.5rem auto;
+    text-align: center;
+}
+
+.conditions,
+.current {
+    text-align: center;
+    border-top: 1px solid black;
+}
+
+.current img {
+    display: block;
+    height: 6rem;
+    width: auto;
+    margin: auto;
+}
+
+section.weather-summary > h3,
+section.forecast > h3 {
+    text-align: center;
+}
+
+section.forecast {
+    display: none;
+}
+
+article {
+    width: 98%;
+    clear: both;
+    text-align: justify;
+    border: 2px solid black;
+    padding: 0.3rem;
+    margin: 1rem auto;
+}
+
+article img {
+    display: block;
+    width: auto;
+    margin: 1rem auto;
+}
+
+.town-article {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0.5rem;
+}
+
+.town-article b {
+    font-size: 1.25rem;
+}
+
+.footer-box {
+    width: 98%;
+    text-align: center;
+    border: 2px solid black;
+    margin: 0 auto 1rem auto;
+}
