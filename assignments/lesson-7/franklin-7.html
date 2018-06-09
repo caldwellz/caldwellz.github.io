@@ -43,12 +43,13 @@
             <section class="weather-summary">
                 <h3>Weather Summary</h3>
                 <div class="highlow">
-                    <p id="hightemp"><b>High:</b> 89&deg;F</p>
-                    <p id="lowtemp"><b>Low:</b> 63&deg;F</p>
+                    <p><b>High: </b><span id="hightemp">65</span>&deg;F</p>
+                    <p><b>Low: </b><span id="lowtemp">25</span>&deg;F</p>
                 </div>
                 <div class="conditions">
                     <p><b>Precipitation</b><br/>30%</p>
-                    <p><b>Wind Speed</b><br/>3 mph N</p>
+                    <p><b>Wind Speed</b><br/><span id="windspeed">4</span> MPH N</p>
+                    <p><b>Wind Chill Factor</b><br/><span id="windchill"></span></p>
                 </div>
                 <div class="current">
                     <p><b>Current Conditions</b><br/>Partly Cloudy</p>
@@ -116,6 +117,7 @@
 
     <script type="text/javascript" src="scripts/hamburger.js"></script>
     <script type="text/javascript" src="scripts/currentdate.js"></script>
+    <script type="text/javascript" src="scripts/windchill.js"></script>
 </body>
 
 </html>
