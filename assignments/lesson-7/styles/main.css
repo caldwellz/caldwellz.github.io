@@ -22,9 +22,16 @@ body {
 }
 
 nav,
-main,
+.weather-info,
+article,
 footer {
     margin-top: 0.5rem;
+    width: 100%;
+}
+
+h3,
+p {
+    margin: 0.5rem;
 }
 
 header {
@@ -103,11 +110,11 @@ nav ul li a {
     font-weight: bold;
 }
 
-.franklin-image {
+.location-image {
     margin: 0.5rem auto;
 }
 
-.franklin-image img {
+.location-image img {
     max-width: 100%;
     object-fit: contain;
 }
@@ -115,11 +122,6 @@ nav ul li a {
 .weather-info {
     border: 2px solid black;
     text-align: center;
-}
-
-.weather-info h3,
-.weather-info p {
-    margin: 0.5rem;
 }
 
 .dual-temp {
@@ -136,4 +138,25 @@ section.forecast {
     display: none;
 }
 
-footer {}
+article {
+    text-align: center;
+    border: 2px solid black;
+}
+
+article img {
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.article-text {
+    text-align: justify;
+}
+
+.article-text b {
+    font-size: 1.25rem;;
+}
+
+footer {
+    text-align: center;
+    border: 2px solid black;
+}
