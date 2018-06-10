@@ -94,9 +94,9 @@ nav .hamburger-button {
 }
 
 nav ul {
-    width: inherit;
+    max-width: 100%;
     padding: 0;
-    margin: 2px 0;
+    margin: 2px;
 }
 
 nav ul li {
@@ -197,6 +197,10 @@ section.forecast {
     margin: 0.5rem;
     object-fit: contain;
     border: 2px solid black;
+}
+
+.gallery-item:hover {
+    box-shadow: 5px 5px 10px gray;
 }
 
 .gallery-item img {
