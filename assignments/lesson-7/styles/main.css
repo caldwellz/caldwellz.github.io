@@ -187,13 +187,12 @@ section.forecast {
 .gallery {
     display: grid;
     grid-template-columns: 1fr;
+    align-items: flex-end;
     border: 2px solid black;
 }
 
 .gallery-item {
     text-align: center;
-    justify-self: stretch;
-    align-self: end;
     margin: 0.5rem;
     object-fit: contain;
     border: 2px solid black;
