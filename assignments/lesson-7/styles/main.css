@@ -1,5 +1,8 @@
 /* This main css file contains the default rules and is geared toward the small/phone view */
 
+/***************************
+* Shared rules for all pages
+****************************/
 * {
     box-sizing: border-box;
 }
@@ -12,7 +15,7 @@ body {
 .body-container {
     display: flex;
     flex-flow: column nowrap;
-    max-width: 75rem;
+    max-width: 85rem;
     padding: 0.5rem;
     margin: auto;
     background-color: #004d99;
@@ -23,6 +26,7 @@ body {
 }
 
 nav,
+.gallery,
 .page-title,
 .weather-info,
 article,
@@ -67,6 +71,7 @@ nav {
     background-color: #424242;
     color: white;
     text-align: center;
+    border: 2px solid black;
 }
 
 nav ul {
@@ -117,8 +122,36 @@ nav ul li a {
     margin: 0;
     text-align: center;
     font-weight: bold;
+    border: 2px solid black;
+    border-top: none;
 }
 
+article {
+    text-align: center;
+    border: 2px solid black;
+}
+
+article img {
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.article-text {
+    text-align: justify;
+}
+
+.article-text b {
+    font-size: 1.25rem;;
+}
+
+footer {
+    text-align: center;
+    border: 2px solid black;
+}
+
+/*****************
+* City Page rules
+******************/
 .location-image {
     margin: 0.5rem auto;
 }
@@ -148,25 +181,26 @@ section.forecast {
     display: none;
 }
 
-article {
-    text-align: center;
+/*******************
+* Gallery page rules
+********************/
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
     border: 2px solid black;
 }
 
-article img {
-    max-width: 100%;
+.gallery-item {
+    text-align: center;
+    justify-self: stretch;
+    align-self: end;
+    margin: 0.5rem;
     object-fit: contain;
-}
-
-.article-text {
-    text-align: justify;
-}
-
-.article-text b {
-    font-size: 1.25rem;;
-}
-
-footer {
-    text-align: center;
     border: 2px solid black;
+}
+
+.gallery-item img {
+    width: 100%;
+    object-fit: contain;
+    border-bottom: 2px solid black;
 }
