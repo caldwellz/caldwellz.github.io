@@ -19,6 +19,7 @@ body {
     padding: 0.5rem;
     margin: auto;
     background-color: #004d99;
+    border: 1px solid black;
 }
 
 .body-container > * {
@@ -70,7 +71,6 @@ header .subheading {
 nav {
     background-color: #424242;
     color: white;
-    text-align: center;
     border: 2px solid black;
 }
 
@@ -81,6 +81,7 @@ nav ul {
 nav .hamburger-button {
     background-color: inherit;
     color: inherit;
+    border: none;
     height: 2.5rem;
     width: 2.5rem;
 }
@@ -100,6 +101,7 @@ nav ul {
 }
 
 nav ul li {
+    text-align: center;
     padding: 0.3rem;
     border: 1px solid white;
 }
