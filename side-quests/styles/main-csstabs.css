@@ -5,14 +5,10 @@
 .tab-box {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto auto;
+    grid-template-rows: auto auto auto;
     border: 3px solid #73AD21;
     max-width: 75%;
     margin: auto;
-}
-
-input[type=radio] {
-    display: none;
 }
 
 .tab-header {
@@ -31,6 +27,10 @@ input[type=radio] {
     background-color: beige;
     text-align: justify;
     padding: 5px;
+}
+
+input[type=radio] {
+    display: none;
 }
 
 input[type=radio]:checked + label > .tab-header {
