@@ -6,3 +6,53 @@ body {
     font-size: 16px;
     font-family: Ubuntu, sans-serif;
 }
+
+table {
+    box-shadow: 7px 7px 10px #628ca6;
+    border-collapse: collapse;
+    border: 1px solid grey;
+    margin: 10px auto;
+}
+
+table th,
+table td {
+    text-align: center;
+    padding: 0.5rem;
+    border: 1px solid #d3d3d3;
+}
+
+thead tr {
+    background-color: #7fb9c2;
+}
+
+thead tr h1 {
+    font-size: 1.75rem;
+    margin: 0;
+}
+
+thead tr + tr {
+    background-color: #628ca6;
+}
+
+thead tr h3 {
+    color: white;
+    margin: 0;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #e7f0ed;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #e7ffed;
+}
+
+#nov-goal {
+    background-color: #628ca6;
+    color: white;
+}
+
+tfoot tr {
+    background-color: #7fb9c2;
+    font-size: 12px;
+}
