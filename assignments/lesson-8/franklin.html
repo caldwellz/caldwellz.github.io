@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Weather site for Dayton-area paper airplane pilots and enthusiasts - Franklin page">
+    <title>Dayton Paper Pilots | Franklin Weather</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+</head>
+
+<body>
+    <div class="body-container">
+        <header>
+            <img src="images/paper-airplane.svg" alt="Paper Airplane Logo" />
+            <h1>Dayton Paper Pilots</h1>
+            <h4 class="subheading">Your source for Dayton-area paper airplane news and weather</h4>
+        </header>
+
+        <nav>
+            <button class="hamburger-button" onclick="toggleBurger()">&#9776;</button>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Franklin</a></li>
+                <li><a href="#">Greenville</a></li>
+                <li><a href="#">Springfield</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h2 class="page-title">Franklin City</h2>
+            <figure class="location-image">
+                <img src="images/franklin-small.jpg" srcset="images/franklin-small.jpg 640w, images/franklin-medium.jpg 1024w, images/franklin-large.jpg 1360w" sizes="98vw" alt="Franklin Picture">
+            </figure>
+
+            <div class="weather-info">
+                <section class="weather-summary">
+                    <h3>Weather Summary</h3>
+                    <div class="dual-temp">
+                        <p><b>High: </b><span id="highTempNum">65</span>&deg;F</p>
+                        <p><b>Low: </b><span id="lowTempNum">25</span>&deg;F</p>
+                    </div>
+                    <div class="summary-block">
+                        <p><b>Precipitation</b><br/>30%</p>
+                        <p><b>Wind Speed</b><br/><span id="windspeed">4</span> MPH N</p>
+                        <p><b>Wind Chill Factor</b><br/><span id="windchill"></span></p>
+                    </div>
+                    <div class="summary-block">
+                        <p><b>Current Conditions</b><br/>Partly Cloudy</p>
+                        <picture id="current-conditions-img">
+                            <img src="images/partly-cloudy.svg" alt="Partly Cloudy">
+                        </picture>
+                    </div>
+                </section>
+
+                <section class="forecast">
+                    <h3>Ten Day Forecast</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Day 1</th>
+                                <th>Day 2</th>
+                                <th>Day 3</th>
+                                <th>Day 4</th>
+                                <th>Day 5</th>
+                                <th>Day 6</th>
+                                <th>Day 7</th>
+                                <th>Day 8</th>
+                                <th>Day 9</th>
+                                <th>Day 10</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>89&deg;F</td>
+                                <td>87&deg;F</td>
+                                <td>78&deg;F</td>
+                                <td>75&deg;F</td>
+                                <td>72&deg;F</td>
+                                <td>72&deg;F</td>
+                                <td>79&deg;F</td>
+                                <td>83&deg;F</td>
+                                <td>85&deg;F</td>
+                                <td>89&deg;F</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </div>
+            <article>
+                <h3>Franklin Breaks Record</h3>
+                <img src="https://placehold.it/300x200" alt="Lorem Pixel Image">
+                <p class="article-text">
+                    <b>V</b>oluptatum aut laudantium voluptatem. Voluptate quia rem dolor. Laudantium enim delectus aut debitis sint. Culpa dolore ipsa alias sint ipsam facilis. Quia fugit dolores nihil aut. Sint assumenda quasi distinctio perspiciatis harum autem nam amet. Molestiae minus esse magnam. Similique totam reiciendis ipsam iste. Consequatur quasi et et laborum qui aut. Ab fugit quis sed voluptate tempora enim dolore optio. Architecto est beatae nobis tempora dignissimos totam. Facilis et vero veritatis. Quo consequuntur laborum et dolor aut cupiditate. Ut id ratione veritatis voluptas sed. Animi consequatur illum tempore. Impedit eligendi excepturi ab. Delectus deserunt possimus voluptate doloribus dolores exercitationem. Et temporibus amet expedita reprehenderit ea. Sit sit excepturi quia animi natus quia. A itaque excepturi sit eius facere. Et eos cumque explicabo aliquid. Veritatis et voluptates dolorem molestiae cum enim sint cupiditate. Ea amet voluptates ut ipsam. Non quo ut corporis hic aperiam fugit. Vero ut assumenda ipsa assumenda nihil earum.
+                </p>
+            </article>
+        </main>
+
+        <footer>
+            Contact information placeholder 999.999.9999 123 Main St. Anytown, US 99999 <a href="http://google.com/maps">Google Map</a>
+            <br />Copyright &copy; 2018 | All Rights Reserved | Dayton Paper Pilots | <span id="currentdate">Current Date Placeholder</span>
+        </footer>
+    </div>
+    <script type="text/javascript" src="scripts/hamburger.js"></script>
+    <script type="text/javascript" src="scripts/currentdate.js"></script>
+    <script type="text/javascript" src="scripts/windchill.js"></script>
+</body>
+
+</html>
