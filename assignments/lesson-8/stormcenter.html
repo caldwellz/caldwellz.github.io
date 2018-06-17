@@ -67,8 +67,8 @@
                         <input id="storm-severity" name="storm-severity" type="range" min="1" max="10" step="1" value="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
                         <span id="storm-severity-rating">1</span>
                     </div>
-                    <p>Region &#42;</p>
-                    <select name="storm-region" required>
+                    <p>Region</p>
+                    <select name="storm-region">
                         <option selected disabled>Select Region ...</option>
                         <option value="franklin">Franklin</option>
                         <option value="greenville">Greenville</option>
@@ -77,13 +77,12 @@
                     <p>In danger?</p>
                     <div id="danger-box">
                         <input name="storm-danger" value="yes" type="radio">
-                        <label for="yes">Yes</label>
+                        <span>Yes</span>
                         <input name="storm-danger" value="maybe" type="radio">
-                        <label for="maybe">Maybe</label>
+                        <span>Maybe</span>
                         <input name="storm-danger" value="no" type="radio">
-                        <label for="no">No</label>
+                        <span>No</span>
                     </div>
-                    <p class="fine-print">&#42;Required</p>
                 </fieldset>
                 <fieldset>
                     <legend>Additional Comments</legend>

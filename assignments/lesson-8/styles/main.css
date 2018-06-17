@@ -242,7 +242,7 @@ form input {
     grid-column: 2;
 }
 
-#danger-box label {
+#danger-box span {
     text-align: left;
     grid-column: 3;
 }
