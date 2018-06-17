@@ -35,6 +35,62 @@
 
         <main>
             <h2 class="page-title">Storm Center</h2>
+            <form id="storm-form" action="thanks.html">
+                <fieldset>
+                    <legend>Contact Info</legend>
+                    <p>Name &#42;</p>
+                    <input name="full-name" type="text" pattern="[A-Za-z].{4,}" required autofocus>
+                    <p>E-mail address</p>
+                    <input name="email" type="email" placeholder="yourname@example.com">
+                    <p>Phone number &#42;</p>
+                    <input name="phone" type="tel" required>
+                    <p>Zip code &#42;</p>
+                    <input name="zip-code" type="number" required>
+                    <p class="fine-print">&#42;Required</p>
+                </fieldset>
+                <fieldset>
+                    <legend>Storm Info</legend>
+                    <p>Date</p>
+                    <input name="storm-date" type="date">
+                    <p>Type</p>
+                    <input list="storm-type">
+                    <datalist id="storm-type">
+                        <option value="Flash Flood">
+                        <option value="Snow">
+                        <option value="Hail">
+                        <option value="Hurricane">
+                        <option value="Thunderstorm">
+                        <option value="Tornado">
+                    </datalist>
+                    <p>Severity</p>
+                    <div id="severity-box">
+                        <input id="storm-severity" name="storm-severity" type="range" min="1" max="10" step="1" value="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                        <span id="storm-severity-rating">1</span>
+                    </div>
+                    <p>Region &#42;</p>
+                    <select name="storm-region" required>
+                        <option selected disabled>Select Region ...</option>
+                        <option value="franklin">Franklin</option>
+                        <option value="greenville">Greenville</option>
+                        <option value="springfield">Springfield</option>
+                    </select>
+                    <p>In danger?</p>
+                    <div id="danger-box">
+                        <input name="storm-danger" value="yes" type="radio">
+                        <label for="yes">Yes</label>
+                        <input name="storm-danger" value="maybe" type="radio">
+                        <label for="maybe">Maybe</label>
+                        <input name="storm-danger" value="no" type="radio">
+                        <label for="no">No</label>
+                    </div>
+                    <p class="fine-print">&#42;Required</p>
+                </fieldset>
+                <fieldset>
+                    <legend>Additional Comments</legend>
+                    <textarea name="comments" rows="12" cols="30"></textarea>
+                </fieldset>
+                <input id="submit-button" name="submit-form" type="submit" value="Submit Report">
+            </form>
         </main>
 
         <footer>
@@ -44,6 +100,7 @@
     </div>
     <script type="text/javascript" src="scripts/hamburger.js"></script>
     <script type="text/javascript" src="scripts/currentdate.js"></script>
+    <script type="text/javascript" src="scripts/stormform.js"></script>
 </body>
 
 </html>
