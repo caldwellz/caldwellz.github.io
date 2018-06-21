@@ -1,0 +1,282 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+/***************************
+* Shared rules for all pages
+****************************/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: Montserrat, Arial, Ubuntu, sans-serif;
+}
+
+.body-container {
+    display: flex;
+    flex-flow: column nowrap;
+    max-width: 85rem;
+    padding: 0.5rem;
+    margin: auto;
+    background-color: #004d99;
+    border: 1px solid black;
+}
+
+.body-container > * {
+    flex: 1 100%;
+}
+
+nav,
+.gallery,
+.page-title,
+.location-image,
+.weather-info,
+article,
+fieldset,
+footer {
+    margin: 0.5rem 0 0 0;
+    width: 100%;
+    background-color: white;
+    border: 2px solid black;
+}
+
+h3,
+p {
+    margin: 0.5rem;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 4rem auto;
+    grid-template-rows: 1fr auto;
+    grid-column-gap: 5px;
+    color: white;
+}
+
+header img {
+    grid-row: span 2;
+    grid-column: 1;
+    margin: auto;
+}
+
+header h1 {
+    margin: 0px;
+    grid-row: 1;
+    grid-column: 2;
+}
+
+header .subheading {
+    margin: 0px;
+    grid-row: 2;
+    grid-column: 2;
+}
+
+nav {
+    background-color: #424242;
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav .hamburger-button {
+    background-color: inherit;
+    color: inherit;
+    border: none;
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.navigation {
+    display: none;
+}
+
+.navigation.responsive {
+    display: block;
+}
+
+nav ul {
+    max-width: 100%;
+    padding: 0;
+    margin: 2px;
+}
+
+nav ul li {
+    text-align: center;
+    padding: 0.3rem;
+    border: 1px solid white;
+}
+
+nav ul li.active a {}
+
+nav ul li:hover,
+nav ul li:focus {
+    background-color: white;
+    color: #424242;
+}
+
+nav ul li a {
+    background-color: inherit;
+    color: inherit;
+    text-decoration: none;
+}
+
+.page-title {
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+    border-top: none;
+}
+
+article {
+    text-align: center;
+}
+
+article img {
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.article-text {
+    text-align: justify;
+}
+
+.article-text b {
+    font-size: 1.25rem;;
+}
+
+footer {
+    text-align: center;
+}
+
+/*****************
+* City Page rules
+******************/
+
+.location-image img {
+    max-width: 100%;
+    object-fit: fill;
+}
+
+.weather-info {
+    text-align: center;
+}
+
+.dual-temp {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+.summary-block {
+    border-top: 2px dashed black;
+}
+
+section.forecast {
+    display: none;
+}
+
+/*******************
+* Gallery page rules
+********************/
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: flex-end;
+}
+
+.gallery-item {
+    text-align: center;
+    margin: 0.5rem;
+    object-fit: contain;
+    border: 2px solid black;
+}
+
+.gallery-item:hover {
+    box-shadow: 5px 5px 10px gray;
+}
+
+.gallery-item img {
+    width: 100%;
+    object-fit: contain;
+    border-bottom: 2px solid black;
+}
+
+/*******************
+* Storm Center page rules
+********************/
+form {
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+}
+
+form input {
+    display: block;
+    margin: auto;
+}
+
+#severity-box {
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+    grid-template-rows: auto;
+}
+
+#storm-severity {
+    grid-column: 2;
+}
+
+#storm-severity-rating {
+    grid-column: 3;
+    font-weight: bold;
+}
+
+#danger-box {
+    display: grid;
+    grid-template-columns: 3fr 1fr auto 3fr;
+    grid-template-rows: auto auto auto;
+}
+
+#danger-box input {
+    grid-column: 2;
+}
+
+#danger-box span {
+    text-align: left;
+    grid-column: 3;
+}
+
+legend {
+    padding: 0 0.2rem 0 0.2rem;
+    border: 2px solid black;
+    background-color: white;
+}
+
+fieldset p {
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+form textarea {
+    width: 100%;
+    border: 1px solid black;
+}
+
+.fine-print {
+    margin-top: 1rem;
+    font-size: 0.75rem;
+    text-align: left;
+}
+
+#submit-button {
+    width: 50%;
+    margin: 0.5rem auto;
+    background-color: #424242;
+    color: white;
+}
+
+#submit-button:hover,
+#submit-button:focus {
+    text-shadow: black 3px 3px;
+}

@@ -1,0 +1,61 @@
+@media only screen and (min-width: 37.5em) {
+    /***************************
+    * Shared rules for all pages
+    ****************************/
+    .hamburger-button {
+        display: none;
+    }
+
+    .navigation,
+    .navigation.responsive {
+  /*    position: fixed; */
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+        grid-template-rows: auto;
+    }
+
+    nav ul li {
+        grid-column: span 1;
+        grid-row: 1;
+        border: none;
+    }
+
+    /*****************
+    * City Page rules
+    ******************/
+    .weather-info {
+        display: block;
+    }
+
+    section.forecast {
+        display: block;
+        text-align: center;
+        width: 100%;
+        border-top: 2px solid black;
+        padding-bottom: 0.5rem;
+    }
+
+    section.forecast table {
+        margin: auto;
+    }
+
+    section.forecast thead {
+        background-color: #424242;
+        color: white;
+        border-bottom: 2px solid black;
+    }
+
+    section.forecast th,
+    section.forecast td {
+        padding-left: 0.2rem;
+        padding-right: 0.2rem;
+        border: 1px solid black;
+    }
+
+    /*******************
+    * Gallery page rules
+    ********************/
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}
