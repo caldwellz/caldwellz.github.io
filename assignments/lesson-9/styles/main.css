@@ -1,8 +1,8 @@
 /* This main css file contains the default rules and is geared toward the small/phone view */
 
-/***************************
+/**********************************************
 * Shared rules for all pages
-****************************/
+***********************************************/
 * {
     box-sizing: border-box;
 }
@@ -108,8 +108,6 @@ nav ul li {
     border: 1px solid white;
 }
 
-nav ul li.active a {}
-
 nav ul li:hover,
 nav ul li:focus {
     background-color: white;
@@ -150,10 +148,10 @@ footer {
     text-align: center;
 }
 
-/*****************
-* City Page rules
-******************/
 
+/************************************
+* City page rules
+*************************************/
 .location-image img {
     max-width: 100%;
     object-fit: fill;
@@ -163,7 +161,7 @@ footer {
     text-align: center;
 }
 
-.dual-temp {
+.dual-data {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
@@ -177,9 +175,10 @@ section.forecast {
     display: none;
 }
 
-/*******************
-* Gallery page rules
-********************/
+
+/**************************************
+* Gallery page rules (also used on homepage)
+***************************************/
 .gallery {
     display: grid;
     grid-template-columns: 1fr;
@@ -203,9 +202,10 @@ section.forecast {
     border-bottom: 2px solid black;
 }
 
-/*******************
+
+/**************************************
 * Storm Center page rules
-********************/
+***************************************/
 form {
     max-width: 300px;
     margin: auto;
