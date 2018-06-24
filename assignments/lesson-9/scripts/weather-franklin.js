@@ -40,25 +40,23 @@ function fillSummaryDetails(data) {
     var eWindSpeed = document.getElementById("windspeed");
     var eCondShort = document.getElementById("conditions-short");
     var eCondLong  = document.getElementById("conditions-long");
-    var eCondPict  = document.getElementById("conditions-picture");
+    var eCondImg  = document.getElementById("conditions-picture");
 
     eWindSpeed.textContent = data.windSpeed + " " + data.windDirection;
     eCondShort.textContent = data.shortForecast;
     eCondLong.innerHTML    = "<i>Details: </i>" + data.detailedForecast;
-
-    imgElem = document.createElement('img');
-    imgElem.setAttribute("src", data.icon);
-    imgElem.setAttribute("alt", "Weather conditions icon");
-    eCondPict.appendChild(imgElem);
+    eCondImg.setAttribute("src", data.icon);
 }
 
 function fillForecast(data) {
-    var tableRow = document.getElementById("tenday-data");
+    var tableBody = document.getElementById("tenday-data");
+    var tableRow = document.createElement('tr');
     for (i = 1; i < 11; i++) {
         var dataElem = document.createElement('td');
         dataElem.innerHTML = data[i].temperature.toString() + "&deg;F";
         tableRow.appendChild(dataElem);
     }
+    tableBody.appendChild(tableRow);
 }
 
 function getFahrenheitStr(celsius) {
