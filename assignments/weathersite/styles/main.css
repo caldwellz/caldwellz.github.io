@@ -108,6 +108,11 @@ nav ul li {
     border: 1px solid white;
 }
 
+#nav-wayfind-current {
+    background-color: #304d99;
+    color: white;
+}
+
 nav ul li:hover,
 nav ul li:focus {
     background-color: white;
