@@ -53,12 +53,14 @@ header {
     color: white;
 }
 
-#header-img {
+#header-img,
+#header-img img {
     width: 4rem;
+    max-width: 4rem;
     height: auto;
     grid-column: 1;
     grid-row: span 2;
-    margin: auto;
+    margin: 0px;
 }
 
 #header-title,
