@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Weather site for Dayton-area paper airplane pilots and enthusiasts - Franklin page">
+        <title>Dayton Paper Pilots | Homepage</title>
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/large.css">
+    </head>
+
+    <body>
+        <div class="body-container">
+            <header>
+                <img src="images/paper-airplane.svg" alt="Paper Airplane Logo" />
+                <h1>Dayton Paper Pilots</h1>
+                <h4 class="subheading">Your source for Dayton-area paper airplane news and weather</h4>
+            </header>
+
+            <nav>
+                <button class="hamburger-button" onclick="toggleBurger()">&#9776;</button>
+                <ul class="navigation">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="franklin.html">Franklin</a></li>
+                    <li><a href="#">Greenville</a></li>
+                    <li><a href="#">Springfield</a></li>
+                    <li><a href="stormcenter.html">Storm Center</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+
+            <main>
+                <h2 class="page-title">Home</h2>
+                <div class="gallery">
+                    <div class="gallery-item">
+                        <a href="franklin.html">
+                            <img src="images/franklin-small.jpg" alt="Franklin picture" />
+                        </a>
+                        <div id="franklin-data"></div>
+                    </div>
+                    <div class="gallery-item">
+                        <a href="#">
+                            <img src="https://placehold.it/200x150" alt="Lorem Pixel Image" />
+                        </a>
+                        <div id="greenville-data"></div>
+                    </div>
+                    <div class="gallery-item">
+                        <a href="#">
+                            <img src="https://placehold.it/200x150" alt="Lorem Pixel Image" />
+                        </a>
+                        <div id="springfield-data"></div>
+                    </div>
+                </div>
+            </main>
+
+            <footer>
+                Contact information placeholder 999.999.9999 123 Main St. Anytown, US 99999 <a href="http://google.com/maps">Google Map</a>
+                <br />Copyright &copy; 2018 | All Rights Reserved | Dayton Paper Pilots | <span id="currentdate">Current Date Placeholder</span>
+            </footer>
+        </div>
+
+        <script type="text/javascript" src="scripts/hamburger.js"></script>
+        <script type="text/javascript" src="scripts/currentdate.js"></script>
+        <script type="text/javascript" src="scripts/towndata.js"></script>
+    </body>
+</html>
