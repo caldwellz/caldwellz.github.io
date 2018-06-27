@@ -1,105 +1,81 @@
 <!DOCTYPE html>
 <html lang="en-us">
+    <head html-include="modules/head.html">
+        <title>Dayton Paper Pilots | Storm Center</title>
+    </head>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Weather site for Dayton-area paper airplane pilots and enthusiasts - Franklin page">
-    <title>Dayton Paper Pilots | Storm Center</title>
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/medium.css">
-    <link rel="stylesheet" href="styles/large.css">
-</head>
+    <body>
+        <div class="body-container">
+            <header html-include="modules/body-header.html">
+            </header>
 
-<body>
-    <div class="body-container">
-        <header>
-            <img src="images/paper-airplane.svg" alt="Paper Airplane Logo" />
-            <h1>Dayton Paper Pilots</h1>
-            <h4 class="subheading">Your source for Dayton-area paper airplane news and weather</h4>
-        </header>
+            <nav html-include="modules/nav.html">
+            </nav>
 
-        <nav>
-            <button class="hamburger-button" onclick="toggleBurger()">&#9776;</button>
-            <ul class="navigation">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="franklin.html">Franklin</a></li>
-                <li><a href="#">Greenville</a></li>
-                <li><a href="#">Springfield</a></li>
-                <li><a href="#">Storm Center</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-            </ul>
-        </nav>
+            <main>
+                <h2 class="page-title">Storm Center</h2>
+                <form id="storm-form" action="thanks.html">
+                    <fieldset>
+                        <legend>Contact Info</legend>
+                        <p>Name &#42;</p>
+                        <input name="full-name" type="text" pattern="[A-Za-z].{4,}" required autofocus>
+                        <p>E-mail address</p>
+                        <input name="email" type="email" placeholder="yourname@example.com">
+                        <p>Phone number &#42;</p>
+                        <input name="phone" type="tel" required>
+                        <p>Zip code &#42;</p>
+                        <input name="zip-code" type="number" required>
+                        <p class="fine-print">&#42;Required</p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Storm Info</legend>
+                        <p>Date</p>
+                        <input name="storm-date" type="date">
+                        <p>Type</p>
+                        <input list="storm-type">
+                        <datalist id="storm-type">
+                            <option value="Flash Flood">
+                            <option value="Snow">
+                            <option value="Hail">
+                            <option value="Hurricane">
+                            <option value="Thunderstorm">
+                            <option value="Tornado">
+                        </datalist>
+                        <p>Severity</p>
+                        <div id="severity-box">
+                            <input id="storm-severity" name="storm-severity" type="range" min="1" max="10" step="1" value="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                            <span id="storm-severity-rating">1</span>
+                        </div>
+                        <p>Region</p>
+                        <select name="storm-region">
+                            <option selected disabled>Select Region ...</option>
+                            <option value="franklin">Franklin</option>
+                            <option value="greenville">Greenville</option>
+                            <option value="springfield">Springfield</option>
+                        </select>
+                        <p>In danger?</p>
+                        <div id="danger-box">
+                            <input name="storm-danger" value="yes" type="radio">
+                            <span>Yes</span>
+                            <input name="storm-danger" value="maybe" type="radio">
+                            <span>Maybe</span>
+                            <input name="storm-danger" value="no" type="radio">
+                            <span>No</span>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Additional Comments</legend>
+                        <textarea name="comments" rows="12" cols="30"></textarea>
+                    </fieldset>
+                    <input id="submit-button" name="submit-form" type="submit" value="Submit Report">
+                </form>
+            </main>
 
-        <main>
-            <h2 class="page-title">Storm Center</h2>
-            <form id="storm-form" action="thanks.html">
-                <fieldset>
-                    <legend>Contact Info</legend>
-                    <p>Name &#42;</p>
-                    <input name="full-name" type="text" pattern="[A-Za-z].{4,}" required autofocus>
-                    <p>E-mail address</p>
-                    <input name="email" type="email" placeholder="yourname@example.com">
-                    <p>Phone number &#42;</p>
-                    <input name="phone" type="tel" required>
-                    <p>Zip code &#42;</p>
-                    <input name="zip-code" type="number" required>
-                    <p class="fine-print">&#42;Required</p>
-                </fieldset>
-                <fieldset>
-                    <legend>Storm Info</legend>
-                    <p>Date</p>
-                    <input name="storm-date" type="date">
-                    <p>Type</p>
-                    <input list="storm-type">
-                    <datalist id="storm-type">
-                        <option value="Flash Flood">
-                        <option value="Snow">
-                        <option value="Hail">
-                        <option value="Hurricane">
-                        <option value="Thunderstorm">
-                        <option value="Tornado">
-                    </datalist>
-                    <p>Severity</p>
-                    <div id="severity-box">
-                        <input id="storm-severity" name="storm-severity" type="range" min="1" max="10" step="1" value="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-                        <span id="storm-severity-rating">1</span>
-                    </div>
-                    <p>Region</p>
-                    <select name="storm-region">
-                        <option selected disabled>Select Region ...</option>
-                        <option value="franklin">Franklin</option>
-                        <option value="greenville">Greenville</option>
-                        <option value="springfield">Springfield</option>
-                    </select>
-                    <p>In danger?</p>
-                    <div id="danger-box">
-                        <input name="storm-danger" value="yes" type="radio">
-                        <span>Yes</span>
-                        <input name="storm-danger" value="maybe" type="radio">
-                        <span>Maybe</span>
-                        <input name="storm-danger" value="no" type="radio">
-                        <span>No</span>
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <legend>Additional Comments</legend>
-                    <textarea name="comments" rows="12" cols="30"></textarea>
-                </fieldset>
-                <input id="submit-button" name="submit-form" type="submit" value="Submit Report">
-            </form>
-        </main>
-
-        <footer>
-            Contact information placeholder 999.999.9999 123 Main St. Anytown, US 99999 <a href="http://google.com/maps">Google Map</a>
-            <br />Copyright &copy; 2018 | All Rights Reserved | Dayton Paper Pilots | <span id="currentdate">Current Date Placeholder</span>
-        </footer>
-    </div>
-    <script type="text/javascript" src="scripts/hamburger.js"></script>
-    <script type="text/javascript" src="scripts/currentdate.js"></script>
-    <script type="text/javascript" src="scripts/stormform.js"></script>
-</body>
-
+            <footer html-include="modules/footer.html">
+            </footer>
+        </div>
+        <script type="text/javascript" src="scripts/hamburger.js"></script>
+        <script type="text/javascript" src="scripts/currentdate.js"></script>
+        <script type="text/javascript" src="scripts/stormform.js"></script>
+    </body>
 </html>
