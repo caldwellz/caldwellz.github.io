@@ -53,16 +53,21 @@ header {
     color: white;
 }
 
-header img {
-    grid-row: span 2;
+#header-img {
+    width: 4rem;
+    height: auto;
     grid-column: 1;
+    grid-row: span 2;
     margin: auto;
 }
 
-header h1 {
+#header-title,
+#header-title h1 {
     margin: 0px;
     grid-row: 1;
     grid-column: 2;
+    color: inherit;
+    text-decoration: none;
 }
 
 header .subheading {
