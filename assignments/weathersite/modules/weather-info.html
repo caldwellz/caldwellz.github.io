@@ -1,0 +1,41 @@
+<section class="weather-summary">
+    <h3>Weather Summary</h3>
+    <div class="dual-data">
+        <p><b>High: </b><span id="highTempNum"></span>&deg;F</p>
+        <p><b>Low: </b><span id="lowTempNum"></span>&deg;F</p>
+    </div>
+    <div class="summary-block">
+        <p><b>Current Precipitation</b><br/><span id="precipitation"></span></p>
+        <p><b>Current Wind Speed</b><br/><span id="windspeed"></span></p>
+        <p><b>Current Temp w/ Wind Chill</b><br/><span id="windchill"></span>&deg;F</p>
+    </div>
+    <div class="summary-block">
+        <p><b>Conditions</b><br/><span id="conditions-short"></span></p>
+        <picture>
+            <img id="conditions-picture" src="#" alt="Weather conditions icon"/>
+        </picture>
+        <p id="conditions-long" class="article-text"></p>
+    </div>
+</section>
+
+<section class="forecast">
+    <h3>Ten Day Forecast</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Day 1</th>
+                <th>Day 2</th>
+                <th>Day 3</th>
+                <th>Day 4</th>
+                <th>Day 5</th>
+                <th>Day 6</th>
+                <th>Day 7</th>
+                <th>Day 8</th>
+                <th>Day 9</th>
+                <th>Day 10</th>
+            </tr>
+        </thead>
+        <tbody id="tenday-data">
+        </tbody>
+    </table>
+</section>

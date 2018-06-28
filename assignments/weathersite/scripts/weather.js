@@ -1,27 +1,10 @@
 /*
- * Fill in the Franklin Page weather data
+ * Fill in the town page weather data
  */
 
-// Today's high, low, windchill and precip are only in detailed data; forecast is used for everything else.
-// And yeah... I know I could use OpenWeatherMap, but I'd already figured
-// out this API by the time all the instructions for that were discussed.
-var wdetailsURL = "https://api.weather.gov/gridpoints/MPX/54,50";
-var wdetails = new XMLHttpRequest();
-wdetails.open('GET', wdetailsURL);
-wdetails.responseType = 'json';
-wdetails.send();
-wdetails.onload = function() {
-    fillSummaryTemps(wdetails.response.properties);
-}
-
-var forecastURL = "https://api.weather.gov/gridpoints/MPX/54,50/forecast";
-var forecast = new XMLHttpRequest();
-forecast.open('GET', forecastURL);
-forecast.responseType = 'json';
-forecast.send();
-forecast.onload = function() {
-    fillSummaryDetails(forecast.response.properties.periods[0]);
-    fillForecast(forecast.response.properties.periods);
+function getFahrenheitStr(celsius) {
+    var f = (1.8 * celsius) + 32;
+    return f.toFixed(0).toString();
 }
 
 function fillSummaryTemps(data) {
@@ -59,7 +42,28 @@ function fillForecast(data) {
     tableBody.appendChild(tableRow);
 }
 
-function getFahrenheitStr(celsius) {
-    var f = (1.8 * celsius) + 32;
-    return f.toFixed(0).toString();
+function loadWeather() {
+    gridpoint = document.getElementById("weather-info").getAttribute("gridpoint");
+
+    // Today's high, low, windchill and precip are only in detailed data; forecast is used for everything else.
+    // And yeah... I know I could easily use OpenWeatherMap, but I'd already figured
+    // out this API by the time all the instructions for that were discussed...
+    wdetailsURL = "https://api.weather.gov/gridpoints/" + gridpoint;
+    wdetails = new XMLHttpRequest();
+    wdetails.open('GET', wdetailsURL);
+    wdetails.responseType = 'json';
+    wdetails.send();
+    wdetails.onload = function() {
+        fillSummaryTemps(wdetails.response.properties);
+    }
+
+    forecastURL = "https://api.weather.gov/gridpoints/" + gridpoint + "/forecast";
+    forecast = new XMLHttpRequest();
+    forecast.open('GET', forecastURL);
+    forecast.responseType = 'json';
+    forecast.send();
+    forecast.onload = function() {
+        fillSummaryDetails(forecast.response.properties.periods[0]);
+        fillForecast(forecast.response.properties.periods);
+    }
 }

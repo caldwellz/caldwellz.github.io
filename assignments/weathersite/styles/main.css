@@ -30,7 +30,7 @@ nav,
 .gallery,
 .page-title,
 .location-image,
-.weather-info,
+#weather-info,
 article,
 fieldset,
 footer {
@@ -165,7 +165,7 @@ footer {
     object-fit: fill;
 }
 
-.weather-info {
+#weather-info {
     text-align: center;
 }
 

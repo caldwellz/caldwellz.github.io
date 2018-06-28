@@ -23,7 +23,7 @@
     /*****************
     * City Page rules
     ******************/
-    .weather-info {
+    #weather-info {
         display: block;
     }
 
