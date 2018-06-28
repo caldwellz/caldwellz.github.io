@@ -122,11 +122,6 @@ nav ul li a {
     text-decoration: none;
 }
 
-#nav-wayfind-current {
-    background-color: #304d99;
-    color: white;
-}
-
 nav ul li a:hover,
 nav ul li a:focus {
     background-color: white;
