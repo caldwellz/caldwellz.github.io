@@ -34,7 +34,7 @@ nav,
 article,
 fieldset,
 footer {
-    margin: 0.5rem 0 0 0;
+    margin: 0.5rem auto 0 auto;
     width: 100%;
     background-color: white;
     border: 2px solid black;
@@ -160,9 +160,9 @@ footer {
 /************************************
 * City page rules
 *************************************/
-.location-image img {
-    max-width: 100%;
-    object-fit: fill;
+.location-image {
+	display: block;
+    max-width: 50%;
 }
 
 #weather-info {
