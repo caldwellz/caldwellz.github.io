@@ -179,6 +179,16 @@ footer {
     border-top: 2px dashed black;
 }
 
+#conditions-long {
+    /* Uses this to center the text in the summary
+    block while also justifying it in it's own block... */
+    display: inline-block;
+    text-align: justify;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 section.forecast {
     display: none;
 }

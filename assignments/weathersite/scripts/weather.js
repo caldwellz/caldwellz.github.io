@@ -27,7 +27,7 @@ function fillSummaryDetails(data) {
 
     eWindSpeed.textContent = data.windSpeed + " " + data.windDirection;
     eCondShort.textContent = data.shortForecast;
-    eCondLong.innerHTML    = "<i>Details: </i>" + data.detailedForecast;
+    eCondLong.innerHTML    = "<b><i>Details: </i></b>" + data.detailedForecast;
     eCondImg.setAttribute("src", data.icon);
 }
 
