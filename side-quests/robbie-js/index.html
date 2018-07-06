@@ -1,0 +1,289 @@
+<!--
+   Copyright (c) 2012 Rex Barzee and Lee Barney
+ Permission is hereby granted, free of charge, to any person obtaining a 
+ copy of this software and associated documentation files (the "Software"), 
+ to deal in the Software without restriction, including without limitation the 
+ rights to use, copy, modify, merge, publish, distribute, sublicense, 
+ and/or sell copies of the Software, and to permit persons to whom the Software 
+ is furnished to do so, subject to the following conditions:
+ 
+ The above copyright notice and this permission notice shall be 
+ included in all copies or substantial portions of the Software.
+ 
+ 
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, 
+ INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A 
+ PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT 
+ HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF 
+ CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE 
+ OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+-->
+
+<!-- version 3.0 -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Robbie JS BETA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="robot.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="robot.js"></script>
+    <script id="funcScript" type="text/javascript"></script>
+  </head>
+  <body onload="setup()">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <!-- <div class="navbar-header"> -->
+        <h3 id="headerTitle">Robbie JS <span class="sub">3.1 BETA</span></h3>
+      <!-- </div> -->
+    </nav>
+    <div id="leftInstructions">
+      <div id="instrColor">
+        <h2 class="titles" id="instrTitle">Instructions</h2>
+      </div>    
+      <div class="instructions display">
+      <span id="intro" class="hideThis">
+      <p>Type commands in the <span class="menu">code text area</span> to
+      cause Robbie the Robot to move from the upper left corner to the lower
+      right corner of the <span class="menu">robot arena</span>.&nbsp; On the
+      way to the lower right corner Robbie must pass over the center dot in
+      the middle row and the center dot in the bottom row.&nbsp; The commands
+      that you can use are</p>
+      <ul>
+        <li>moveForward();</li>
+        <li>moveBackward();</li>
+        <li>turnLeft();</li>
+        <li>turnRight();</li>
+        <li>print("Any message here");</li>
+      </ul>
+      </span>
+
+      <span id="select" class="hideThis">
+      <p>Type commands in the <span class="menu">code text area</span> to
+      cause Robbie the Robot to move within the robot arena</p>
+      <ul>
+          <li>from the upper left corner to the lower left corner if today is
+          Monday, Wednesday, or Friday,</li>
+          <li>from the upper left corner to the upper right corner if today is
+          Tuesday or Thursday,</li>
+          <li>from the upper left corner to the lower right corner if today is
+          Saturday or Sunday.</li>
+      </ul>
+      Your code must include this statement to determine what day of the week
+      today is.
+      <pre>var day = new Date().getDay();</pre>
+      After the computer executes that statement, the variable
+      <code>day</code> will hold 0 if today is Sunday, 1 if today is Monday,
+      and so on to 6 if today is Saturday.&nbsp; Your code must also include
+      several if statements and some or all of these commands inside the if
+      statements.
+      <ul>
+        <li>moveForward();</li>
+        <li>moveBackward();</li>
+        <li>turnLeft();</li>
+        <li>turnRight();</li>
+        <li>print("Any message here");</li>
+      </ul>
+      For example:
+      <pre>var day = new Date().getDay();
+      if (day == 1) {
+          turnRight();
+      }
+      else {
+          turnLeft();
+      }</pre>
+      </span>
+
+      <span id="repeat" class="hideThis">
+      <p>Type commands in the <span class="menu">code text area</span> to
+      cause Robbie the Robot to move from the upper left corner to the lower
+      right corner of the <span class="menu">robot arena</span>.&nbsp; On the
+      way to the lower right corner Robbie must pass over the center dot in
+      the middle row and the center dot in the bottom row.&nbsp; The commands
+      that you write must include <b>at least three repetition control
+      structures (loops)</b> with some or all of these commands inside the
+      loops.
+      <ul>
+        <li>moveForward();</li>
+        <li>moveBackward();</li>
+        <li>turnLeft();</li>
+        <li>turnRight();</li>
+        <li>print("Any message here");</li>
+      </ul>
+      For example:
+      <pre>for (var i = 1;  i &lt;= 5;  i++) {
+          moveForward();
+      }</pre>
+      </span>
+
+      <span id="func" class="hideThis">
+      <p>Type commands in the <span class="menu">code text area</span> to
+      cause Robbie the Robot to move from the upper left corner to the lower
+      right corner of the <span class="menu">robot arena</span>.&nbsp; On the
+      way to the lower right corner Robbie must pass over the center dot in
+      the middle row and the center dot in the bottom row.&nbsp; The code that
+      you write must include <b>five functions</b> with these signatures:</p>
+      <ul>
+        <li>run()</li>
+        <li>forward(spaces)</li>
+        <li>backward(spaces)</li>
+        <li>left(quarterTurns)</li>
+        <li>right(quarterTurns)</li>
+      </ul>
+      The <code>run</code> function must call all of the other four functions.
+      Each of the last four functions has one integer parameter that specifies
+      how many spaces to move forward or backward or how many quarter turns to
+      make.&nbsp; You must write each of the last four functions so that it
+      calls the correct one of these existing functions:
+      <ul>
+        <li>moveForward();</li>
+        <li>moveBackward();</li>
+        <li>turnLeft();</li>
+        <li>turnRight();</li>
+        <li>print("Any message here");</li>
+      </ul>
+      </span>
+
+      <span id="array" class="hideThis">
+      <p>Your teacher has created an array of commands for Robbie.&nbsp; The
+      array is named <code>commands</code>, and each command is simply a
+      string of text.&nbsp; To make Robbie move, you will not type the
+      <code>moveForward</code>, <code>moveBackward</code>,
+      <code>turnLeft</code>, or <code>turnRight</code> commands.&nbsp; Instead
+      you will write a loop to retrieve and process each of the commands one
+      at a time from the <code>commands</code> array.&nbsp; Inside the loop,
+      you must write at least two statements: the first to retrieve the
+      command and assign it to a variable and the second to process the
+      command by calling the
+      <a href="http://www.w3schools.com/jsref/jsref_eval.asp" target="_blank">
+      <code>eval</code> function</a>
+      and passing the command to the <code>eval</code> function.&nbsp; The
+      <code>eval</code> function will execute the command.&nbsp; You
+      will know you have written the code correctly if when you run it, Robbie
+      prints a message to the <span class="menu">output text area</span> and
+      traces the shape of an English letter in the <span class="menu">robot
+      arena</span> as he moves.</p>
+      </span>
+      </div>
+      <div class="assignButtonsContainer">
+        <div class="btn-group assignButtons">
+          <button type="button" class="btn btn-primary"
+          onclick="displayAssignment('intro')" id="introButton">Intro</button>
+          <button type="button" class="btn btn-primary"
+          onclick="displayAssignment('select')" id="selectButton">Select</button>
+          <button type="button" class="btn btn-primary"
+          onclick="displayAssignment('repeat')" id="repeatButton">Repeat</button>
+          <button type="button" class="btn btn-primary"
+          onclick="displayAssignment('func')" id="funcButton">Function</button>
+          <button type="button" class="btn btn-primary"
+          onclick="displayAssignment('array')" id="arrayButton">Array</button>
+        </div>
+      </div>
+    </div>
+    <div id="mainContent">
+    <div id="codeColor">
+      <h2 class="titles">Code</h2>
+    </div>
+        <div id="editor"></div>
+        <div id="robbieArea">
+          <h3>Robbie The Robot</h3>
+          <div id="arena" title="Robot Arena"></div>
+          <h3>Print Messages</h3>
+          <div id="output" class="debugDisplay" title="Debug Messages"></div>
+        </div>
+      <div class="actionButtonsContainer">
+        <div class="actionButtons">
+          <button type="button" class="btn btn-success" onclick="runCode()" data-toggle="modal" data-target="#robbie"><span class="glyphicon glyphicon-play"></span> Run</button>
+
+          <button type="button" class="btn btn-primary" onclick="resetRobbie()"><span class="glyphicon glyphicon-refresh"></span> Reset</button>
+
+          <button type="button" class="btn btn-danger"onclick="resetRobbie(); clearOutput(); clearCode()"><span class="glyphicon glyphicon-trash"></span> Clear</button>
+
+          <button type="button" id="saveAsButton" class="btn btn-primary" data-placement="top"  title data-original-title="Save File"><span class="glyphicon glyphicon-floppy-saved"></span> Save As</button>
+
+          <button type="button" id="saveButton" class="btn btn-primary" onclick="saveFile()"><span class="glyphicon glyphicon-floppy-save"></span> Save</button>
+
+          <button type="button" id="loadButton" class="btn btn-primary" data-placement="top"  title data-original-title="Load File"><span class="glyphicon glyphicon-folder-open" style="right: 3px"></span> Load</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="savePopcontent" style="display: none">
+      <div class="form-group">
+        <label for="saveName">File Name:</label>
+        <input id="saveName" class="form-control" type="text" />
+        <span class="help-inline" id="saveError">&nbsp;</span>
+        <span class="help-inline" id="saveSuccess">&nbsp;</span>
+      </div>
+      <button type="button" onclick="saveFile(true, true)" id="saveOk" class="btn btn-primary">OK</button>
+      <button type="button" onclick="closePopovers('#saveAsButton')" id="saveCancel" class="btn btn-default">Cancel</button>
+      <button type="button" onclick="closePopovers('#saveAsButton')" id="saveFinalOk" class="btn btn-primary hidden">OK</button>
+    </div>
+
+    <div id="loadPopcontent" style="display: none">
+      <div class="form-group">
+        <div id='fileListHolder'>
+        <select id='fileList' size=5></select>
+        </div>
+      </div>
+      <div id="loadButtonBar">
+        <button type="button" onclick="readFile()" id="loadOk" class="btn btn-primary">Open</button>
+        <button type="button" onclick="closePopovers('#loadButton')" id="loadCancel" class="btn btn-default">Cancel</button>
+      </div>
+    </div>
+
+    <script src="ace/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+
+      $('#loadButton').on('show.bs.popover', function () {
+        closePopovers("hideSaveAs");
+        openFile();
+      })
+
+      $('#loadButton').on('shown.bs.popover', function () {
+        hasOpen = true;
+      })
+
+      $('#loadButton').on('hidden.bs.popover', function () {
+        hasOpen = false;
+      })
+
+      $('#saveAsButton').on('show.bs.popover', function () {
+        closePopovers("hideLoad");
+      })
+
+      $('#saveAsButton').on('shown.bs.popover', function () {
+        hasOpen = true;
+      })
+
+      $('#saveAsButton').on('hidden.bs.popover', function () {
+        hasOpen = false;
+      })
+
+        $('#saveAsButton').popover({ 
+          html : true, 
+          content: function() {
+            return $('#savePopcontent').html();
+          }
+        });
+
+        $('#loadButton').popover({ 
+          html : true,
+          content: function() {
+            return $('#loadPopcontent').html();
+          }
+        });
+    </script>
+  </body>
+</html>
