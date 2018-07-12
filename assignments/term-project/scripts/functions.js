@@ -21,7 +21,7 @@ zc.loadModules = function () {
                 elem.after(this.responseText);
             }
         };
-        xhttp.open("GET", modURL, true);
+        xhttp.open("GET", modURL, false);
         xhttp.send();
     });
 };
@@ -29,3 +29,13 @@ zc.loadModules = function () {
 zc.toggleBurger = function () {
     $("nav > a").toggleClass("responsive");
 };
+
+zc.wayfind = function () {
+    // Will need modification to support links using anything other than a plain filename reference, but shouldn't be too hard
+    var pageURLComponents = window.location.pathname.split('/');
+    var page = pageURLComponents[pageURLComponents.length - 1];
+    var elem = $("nav a[href='" + page + "']");
+    if (elem) {
+        elem.addClass("current");
+    }
+}

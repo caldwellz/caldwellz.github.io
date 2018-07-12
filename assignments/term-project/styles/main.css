@@ -45,7 +45,13 @@ nav a.responsive {
 }
 
 nav a:hover,
-nav a:focus,
-nav a.current {
+nav a:focus {
     background: linear-gradient(#ffcf54, #ffde8c, #ffcf54);
+}
+
+nav a.current {
+    font-weight: bold;
+    padding-top: calc(0.25rem - 2px);
+    padding-bottom: calc(0.25rem - 2px);
+    border: 2px solid black;
 }
