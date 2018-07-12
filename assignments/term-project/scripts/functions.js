@@ -1,5 +1,5 @@
 /*
- * Contains general site-wide functionalities such as modularization
+ * Contains general site-wide functionalities
  */
 
 "use strict";
@@ -24,4 +24,8 @@ zc.loadModules = function () {
         xhttp.open("GET", modURL, true);
         xhttp.send();
     });
+};
+
+zc.toggleBurger = function () {
+    $("nav > a").toggleClass("responsive");
 };
