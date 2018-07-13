@@ -32,6 +32,7 @@ zc.toggleBurger = function () {
 
 zc.wayfind = function () {
     // Will need modification to support links using anything other than a plain filename reference, but shouldn't be too hard
+    // TODO: Use foreach() to test .endsWith(page) on all nav hrefs
     var pageURLComponents = window.location.pathname.split('/');
     var page = pageURLComponents[pageURLComponents.length - 1];
     var elem = $("nav a[href='" + page + "']");
