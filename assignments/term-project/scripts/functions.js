@@ -6,23 +6,34 @@
 var zc = {};
 
 zc.loadModules = function () {
+    var importsSupported;
     if ('import' in document.createElement('link')) {
-        // HTML Imports are supported, we're good to go
-        return;
+        // HTML Imports are supported, set a flag
+        importsSupported = true;
+    } else {
+        importsSupported = false;
     }
 
-    // Otherwise, do it the manual way
     $("link[rel='import']").each(function () {
         var elem = $(this);
-        var modURL = elem.attr("href");
-        var xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function () {
-            if (this.readyState === 4 && this.status === 200) {
-                elem.after(this.responseText);
-            }
-        };
-        xhttp.open("GET", modURL, false);
-        xhttp.send();
+        // Links in imports are processed (like stylesheets), but HTML tags aren't automatically embedded, so do that
+        if (importsSupported) {
+            var content = elem.import;
+           // if (content)
+                elem.append(content);
+        }
+        // Do it the manual way if no imports
+        else {
+            var modURL = elem.attr("href");
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState === 4 && this.status === 200) {
+                    elem.after(this.responseText);
+                }
+            };
+            xhttp.open("GET", modURL, false);
+            xhttp.send();
+        }
     });
 };
 
@@ -39,4 +50,18 @@ zc.wayfind = function () {
     if (elem) {
         elem.addClass("current");
     }
+}
+
+function loadServicesTable() {
+/*
+    request.onload = function () {
+       var response = request.response;
+       $.each(response.services, function(i, item) {
+          var tr = $("<tr>").append(
+          $("<td>").text(item.name),
+          $("<td>").text('$' + item.price.toFixed(2)));
+          $("table").append(tr);
+       });
+   }
+*/
 }
