@@ -81,6 +81,7 @@ nav a {
     color: inherit;
     text-decoration: none;
     border: 1px solid black;
+    z-index: 0;
 }
 
 nav a.responsive {
@@ -95,13 +96,16 @@ nav a:focus {
 }
 
 nav a.current {
-    font-weight: bold;
-    border: 2px solid black;
+    font-weight: bolder;
+    box-shadow:
+        4px  4px  6px black,
+        -2px -2px 1px #222;
+    z-index: 2;
 }
 /*** End navbar styling ***/
 
 #content-box {
-    background: linear-gradient(#00c200, #00f200, #00c200);
+    background: linear-gradient(#009000, #00f200, #009000);
 }
 
 footer {
