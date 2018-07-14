@@ -21,10 +21,13 @@ nav {
     text-align: center;
     flex-flow: column nowrap;
     justify-content: space-evenly;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+
 }
 
 #hamburger {
-    background-color: #f9970e;
+    background: linear-gradient(#f9970e, #ffcf54, #f9970e);
     color: inherit;
     border: none;
     height: 2.5rem;
@@ -64,8 +67,7 @@ footer {
     padding: 0px;
     text-align: center;
     background: linear-gradient(#f9970e, #ffcf54, #f9970e);
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+    border: 1px solid black;
 }
 
 /**********************************************
