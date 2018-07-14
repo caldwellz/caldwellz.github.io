@@ -6,34 +6,18 @@
 var zc = {};
 
 zc.loadModules = function () {
-    var importsSupported;
-    if ('import' in document.createElement('link')) {
-        // HTML Imports are supported, set a flag
-        importsSupported = true;
-    } else {
-        importsSupported = false;
-    }
-
-    $("link[rel='import']").each(function () {
-        var elem = $(this);
-        // Links in imports are processed (like stylesheets), but HTML tags aren't automatically embedded, so do that
-        if (importsSupported) {
-            var content = elem.import;
-           // if (content)
-                elem.append(content);
-        }
-        // Do it the manual way if no imports
-        else {
-            var modURL = elem.attr("href");
-            var xhttp = new XMLHttpRequest();
-            xhttp.onreadystatechange = function () {
-                if (this.readyState === 4 && this.status === 200) {
-                    elem.after(this.responseText);
-                }
-            };
-            xhttp.open("GET", modURL, false);
-            xhttp.send();
-        }
+    $("link[rel='preload']").each(function () {
+		var elem = $(this);
+		var modURL = elem.attr("href");
+		var xhttp = new XMLHttpRequest();
+		xhttp.onreadystatechange = function () {
+			if (this.readyState === 4 && this.status === 200) {
+				// Assume all modules are wrapped in <template>, so get only the stuff inside
+				elem.after(this.responseText);
+			}
+		};
+		xhttp.open("GET", modURL);
+		xhttp.send();
     });
 };
 
