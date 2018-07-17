@@ -33,7 +33,7 @@ header {
 #site-title,
 #site-subtitle {
     color: #f9970e;
-    text-shadow: /*black 0px 0px 2px;*/
+    text-shadow:
         -2px -2px 3px #000,
         2px -2px 3px #000,
         -2px 2px 3px #000,
@@ -41,7 +41,7 @@ header {
 /*    background: linear-gradient(#ffcf54, #e08404);
     -webkit-background-clip: text; */
     padding-bottom: 5px;
-    margin: 0px;
+    margin: none;
 }
 /*** End page header styling ***/
 
@@ -51,7 +51,7 @@ nav {
     display: flex;
     text-align: center;
     flex-flow: column nowrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     border-right: 1px solid black;
     border-left: 1px solid black;
 
@@ -114,7 +114,7 @@ nav a.current {
 
 footer {
     font-size: 0.75rem;
-    padding: 0px;
+    padding: none;
     text-align: center;
     background: linear-gradient(#f9970e, #ffcf54, #f9970e);
     border: 1px solid black;
@@ -158,7 +158,7 @@ footer {
 }
 
 .gallery-item h3 {
-    margin: 0px;
+    margin: none;
 }
 
 .bike-features {

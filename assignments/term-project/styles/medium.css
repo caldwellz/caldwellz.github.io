@@ -5,6 +5,8 @@
     ****************************/
     nav {
         flex-flow: row nowrap;
+        border-right: none;
+        border-left: none;
     }
 
     nav a,
