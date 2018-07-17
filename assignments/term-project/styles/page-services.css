@@ -1,0 +1,22 @@
+/**********************************************
+* Services page rules
+***********************************************/
+#services-box {
+    width: 100%;
+    text-align: center; /* IE hack */
+}
+
+#services-box table {
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    border-collapse: collapse;
+    border: 2px solid black;
+}
+
+#services-box td {
+    border: 1px solid black;
+    padding-left: 2px;
+    padding-right: 10px;
+}

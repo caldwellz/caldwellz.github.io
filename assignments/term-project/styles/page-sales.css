@@ -1,0 +1,57 @@
+/**********************************************
+* Sales gallery rules
+**********************************************/
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: flex-end;
+    justify-content: stretch;
+}
+
+.gallery-item {
+    text-align: center;
+    margin: 0.25rem;
+    object-fit: contain;
+    border: 2px solid black;
+}
+
+.gallery-item:hover {
+    box-shadow: 5px 5px 10px gray;
+}
+
+.gallery-item img {
+    width: 100%;
+    object-fit: contain;
+    border-bottom: 2px solid black;
+}
+
+.gallery-item s {
+    color: grey;
+    text-decoration: line-through;
+}
+
+.gallery-item b {
+    color: red;
+}
+
+.gallery-item h3 {
+    margin: none;
+}
+
+.bike-features {
+    text-align: justify;
+}
+
+/* Rules for screens at least 37.5em (usually 600px) wide */
+@media only screen and (min-width: 37.5em) {
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Rules for screen widths >= 64em (usually 1024px) */
+@media only screen and (min-width: 64em) {
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
