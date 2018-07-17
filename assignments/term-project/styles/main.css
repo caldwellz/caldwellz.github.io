@@ -105,7 +105,9 @@ nav a.current {
 /*** End navbar styling ***/
 
 #content-box {
-    background: linear-gradient(#009000, #00f200, #009000);
+/*    background: linear-gradient(#009000, #00f200, #009000); */
+    text-align: justify;
+    padding: 0.5rem;
 }
 
 footer {
@@ -114,6 +116,48 @@ footer {
     text-align: center;
     background: linear-gradient(#f9970e, #ffcf54, #f9970e);
     border: 1px solid black;
+}
+
+
+/**********************************************
+* Sales gallery rules
+**********************************************/
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: flex-end;
+    justify-content: stretch;
+}
+
+.gallery-item {
+    text-align: center;
+    margin: 0.25rem;
+    object-fit: contain;
+    border: 2px solid black;
+}
+
+.gallery-item:hover {
+    box-shadow: 5px 5px 10px gray;
+}
+
+.gallery-item img {
+    width: 100%;
+    object-fit: contain;
+    border-bottom: 2px solid black;
+}
+
+.gallery-item s {
+    color: grey;
+    text-decoration: line-through;
+}
+
+.gallery-item u {
+    color: red;
+    text-decoration: underline;
+}
+
+.bike-features {
+    text-align: justify;
 }
 
 

@@ -17,4 +17,8 @@
     #burger-box {
         display: none;
     }
+
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+    }
 }
