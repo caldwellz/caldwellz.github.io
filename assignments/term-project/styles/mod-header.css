@@ -18,10 +18,10 @@ header {
 #site-subtitle {
     color: #f9970e;
     text-shadow:
-        -2px -2px 3px #000,
-        2px -2px 3px #000,
-        -2px 2px 3px #000,
-        2px 2px 3px #000;
+        -2px -2px 3px black,
+        2px -2px 3px black,
+        -2px 2px 3px black,
+        2px 2px 3px black;
     /*    background: linear-gradient(#ffcf54, #e08404);
     -webkit-background-clip: text; */
     padding-bottom: 5px;

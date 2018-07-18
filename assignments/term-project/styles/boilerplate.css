@@ -27,6 +27,7 @@ body {
 
 #content-box {
 /*    background: linear-gradient(#009000, #00f200, #009000); */
+    background-color: khaki;
     text-align: justify;
     padding: 0.5rem;
 }
