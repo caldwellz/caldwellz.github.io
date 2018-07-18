@@ -1,0 +1,30 @@
+/**********************************************
+* Events page rules
+**********************************************/
+#content-box {
+    text-align: center;
+}
+
+article {
+    text-align: justify;
+    width: 80%;
+    margin: auto;
+    border: 6px double #f9970e;
+}
+
+#article-title {
+    text-align: center;
+    margin: 0.25rem;
+    color: #f9970e;
+    text-shadow:
+        -2px -2px 3px #000,
+        2px -2px 3px #000,
+        -2px 2px 3px #000,
+        2px 2px 3px #000;
+}
+
+article img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
