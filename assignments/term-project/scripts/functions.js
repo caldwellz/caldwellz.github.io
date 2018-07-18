@@ -26,6 +26,11 @@ zc.toggleBurger = function () {
     $("nav > a").toggleClass("responsive");
 };
 
+zc.activateParent = function (obj) {
+    var objParent = $(obj).parent();
+    objParent.addClass("active");
+}
+
 zc.wayfind = function () {
     // Will need modification to support links using anything other than a plain filename reference, but shouldn't be too hard
     // TODO: Use foreach() to test .endsWith(page) on all nav hrefs

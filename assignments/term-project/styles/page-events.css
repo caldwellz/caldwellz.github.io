@@ -39,3 +39,37 @@ article img {
     margin: 0.5rem;
     text-align: justify;
 }
+
+#register-button {
+    width: 40%;
+    padding: 0.25rem;
+    margin-top: 0.5rem;
+    background-color: #ff0505;
+}
+
+#register-button:hover {
+    background-color: #ff4040;
+}
+
+#registration #register-form {
+    display: none;
+}
+
+#registration.active #register-button {
+    display: none;
+}
+
+#registration.active #register-form {
+    display: block;
+    width: 40%;
+    margin: 0.5rem auto auto auto;
+    text-align: center;
+    border: 6px double #ff0505;
+}
+
+legend {
+    padding: 0 0.2rem 0 0.2rem;
+    border: 2px solid black;
+    background-color: white;
+    text-align: center;
+}
