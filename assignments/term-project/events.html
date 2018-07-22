@@ -21,25 +21,28 @@
                 <h3 class="article-title">Cycle the Continental Divide</h3>
                 <img src="https://www.adventurecycling.org/sites/default/assets/Image/Routes_Maps/Details/Great_Divide_Mountain_Bike_Route_3.gif" alt="Route Overview Map" />
                 <div class="article-text"><b>Details: </b>Annual event happening early every August; runs from Helena, MT to Colter Bay, WY (449.6 miles).</div>
+                <div id="registration">
+                    <button id="register-button" onclick="zc.activateParent(this)">Register</button>
+                    <form id="register-form" action="event-thanks.html">
+                        <fieldset>
+                            <p>Full Name *</p>
+                            <input name="full-name" type="text" placeholder="Jane Doe" pattern="[A-Za-z].{5,}" required autofocus>
+                            <p>E-mail address *</p>
+                            <input name="email" type="email" placeholder="yourname@example.com" required>
+                            <p>Phone number *</p>
+                            <input name="phone" type="tel" placeholder="4064046193" required>
+                            <p>Date of Birth *</p>
+                            <input name="birth-date" type="date" required>
+                            <p>Home State or Country *</p>
+                            <input name="homeplace" type="text" placeholder="MT" pattern="[A-Za-z].{2,}" required>
+                            <p class="fine-print">*Required</p>
+                            <p>Additional Comments or Special Requirements</p>
+                            <textarea name="comments" placeholder="Example message" rows="10"></textarea>
+                        </fieldset>
+                        <input id="submit-button" name="submit-form" type="submit" value="Submit">
+                    </form>
+                </div>
             </article>
-            <div id="registration">
-                <button id="register-button" onclick="zc.activateParent(this)">Register</button>
-                <form id="register-form" action="event-thanks.html">
-                    <fieldset>
-                        <legend>Contact Info</legend>
-                        <p>Name &#42;</p>
-                        <input name="full-name" type="text" pattern="[A-Za-z].{4,}" required autofocus>
-                        <p>E-mail address</p>
-                        <input name="email" type="email" placeholder="yourname@example.com">
-                        <p>Phone number &#42;</p>
-                        <input name="phone" type="tel" required>
-                        <p>Zip code &#42;</p>
-                        <input name="zip-code" type="number" required>
-                        <p class="fine-print">&#42;Required</p>
-                    </fieldset>
-                    <input id="submit-button" name="submit-form" type="submit" value="Submit">
-                </form>
-            </div>
         </div>
         <link rel="preload" href="modules/footer.html" />
 

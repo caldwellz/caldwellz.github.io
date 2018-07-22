@@ -8,6 +8,7 @@
 article {
     position: relative;
     width: 80%;
+    max-width: 600px;
     margin: auto;
     border: 6px double #f9970e;
 }
@@ -30,7 +31,7 @@ article img {
     position: relative;
     z-index: 0;
     width: 100%;
-    height: auto;
+    max-width: 600px;
     object-fit: contain;
     border-bottom: 3px solid #f9970e;
 }
@@ -43,7 +44,6 @@ article img {
 #register-button {
     width: 40%;
     padding: 0.25rem;
-    margin-top: 0.5rem;
     background-color: #ff0505;
 }
 
@@ -61,15 +61,47 @@ article img {
 
 #registration.active #register-form {
     display: block;
-    width: 40%;
-    margin: 0.5rem auto auto auto;
-    text-align: center;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
     border: 6px double #ff0505;
 }
 
-legend {
-    padding: 0 0.2rem 0 0.2rem;
-    border: 2px solid black;
-    background-color: white;
+#registration {
+    max-width: 50%;
+    margin: 0.5rem auto 0.5rem auto;
     text-align: center;
+}
+
+#registration * {
+    width: 100%;
+}
+
+#register-form p {
+    margin-bottom: 0px;
+}
+
+#register-form input,
+#register-form textarea,
+#registration button {
+   border: 2px inset black;
+}
+
+.fine-print {
+    font-size: 0.75rem;
+}
+
+#submit-button {
+    padding: 0.25rem;
+    margin: 0.5rem 0px 0.5rem 0px;
+    background-color: #f9970e;
+}
+
+#submit-button:hover,
+#submit-button:active {
+    background-color: #ffcf54;
+}
+
+#thanks {
+    text-align: center;
+    font-weight: bolder;
 }
