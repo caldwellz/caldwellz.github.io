@@ -1,10 +1,6 @@
 /**********************************************
 * Events page rules
 **********************************************/
-#content-box {
-    text-align: center;
-}
-
 article {
     position: relative;
     width: 80%;
@@ -67,23 +63,38 @@ article img {
 }
 
 #registration {
-    max-width: 50%;
+    max-width: 80%;
     margin: 0.5rem auto 0.5rem auto;
     text-align: center;
 }
 
-#registration * {
+#registration > * {
     width: 100%;
 }
 
-#register-form p {
-    margin-bottom: 0px;
+fieldset {
+    display: flex;
+    flex-flow: column nowrap;
+    object-fit: contain;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#register-form fieldset > * {
+    flex 1 98%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #register-form input,
 #register-form textarea,
 #registration button {
-   border: 2px inset black;
+    border: 2px outset black;
+}
+
+#register-form p {
+    margin-bottom: 0px;
 }
 
 .fine-print {
@@ -91,6 +102,7 @@ article img {
 }
 
 #submit-button {
+    width: 80%;
     padding: 0.25rem;
     margin: 0.5rem 0px 0.5rem 0px;
     background-color: #f9970e;
