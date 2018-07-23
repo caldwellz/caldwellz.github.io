@@ -54,7 +54,7 @@ zc.wayfind = function () {
     // TODO: Use foreach() to test .endsWith(page) on all nav hrefs
     var pageURLComponents = window.location.pathname.split('/');
     var page = pageURLComponents[pageURLComponents.length - 1];
-    var elem = $("nav a[href='" + page + "']");
+    var elem = $("a[href='" + page + "']");
     if (elem) {
         elem.addClass("current");
     }
