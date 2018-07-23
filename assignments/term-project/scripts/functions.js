@@ -4,6 +4,7 @@
 
 "use strict";
 var zc = {};
+zc.activeClass = "active";
 
 zc.loadModules = function () {
     $("link[rel='preload']").each(function () {
@@ -28,7 +29,24 @@ zc.toggleBurger = function () {
 
 zc.activateParent = function (obj) {
     var objParent = $(obj).parent();
-    objParent.addClass("active");
+    objParent.addClass(zc.activeClass);
+}
+
+zc.toggleParentUnique = function (obj, instanceClass) {
+    var parent = $(obj).parent();
+
+    // Deactivate if already active
+    if (parent.hasClass(zc.activeClass)) {
+        parent.removeClass(zc.activeClass);
+        return;
+    }
+    // Otherwise, deactivate any other instances and make this one uniquely active
+    else {
+        $('.' + instanceClass).each(function(i, instance) {
+            $(instance).removeClass(zc.activeClass);
+        });
+        parent.addClass(zc.activeClass);
+    }
 }
 
 zc.wayfind = function () {

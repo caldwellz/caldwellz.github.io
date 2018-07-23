@@ -1,59 +1,59 @@
 /**********************************************
 * Sales gallery rules
 **********************************************/
-.gallery {
-    display: grid;
-    grid-template-columns: 1fr;
-    align-items: flex-end;
-    justify-content: stretch;
+.sales-item {
+    width: 80%;
+    margin: auto;
 }
 
-.gallery-item {
-    text-align: center;
-    margin: 0.25rem;
-    object-fit: contain;
-    background-color: white;
+button.accordion {
+    width: 100%;
+    padding: 0.5rem 0px 0.5rem 0px;
+    background-color: #f9970e;
     border: 2px solid black;
 }
 
-.gallery-item:hover {
-    box-shadow: 5px 5px 10px gray;
+button.accordion:hover,
+button.accordion:active {
+    background-color: #ffcf54;
 }
 
-.gallery-item img {
+.sales-item figure {
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
     width: 100%;
+    margin: 0px 0px 2px 0px;
+    text-align: center;
+    background-color: white;
+}
+
+.sales-item.active figure {
+    max-height: 100rem;
+    border: 2px solid black;
+    border-top: none;
+}
+
+.sales-item.active figure img {
+    max-width: 100%;
     object-fit: contain;
     border-bottom: 2px solid black;
 }
 
-.gallery-item s {
+.sales-item.active s {
     color: grey;
     text-decoration: line-through;
 }
 
-.gallery-item b {
+.sales-item.active b {
     color: red;
 }
 
-.gallery-item h3 {
+.sales-item.active h3 {
     margin: 0px;
 }
 
 .bike-features {
     margin: 0.2rem 0.5rem 0.2rem 0.5rem;
     text-align: justify;
-}
-
-/* Rules for screens at least 37.5em (usually 600px) wide */
-@media only screen and (min-width: 37.5em) {
-    .gallery {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-/* Rules for screen widths >= 64em (usually 1024px) */
-@media only screen and (min-width: 64em) {
-    .gallery {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
 }
