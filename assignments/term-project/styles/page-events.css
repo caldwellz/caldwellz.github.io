@@ -1,28 +1,6 @@
 /**********************************************
 * Events page rules
 **********************************************/
-article {
-    position: relative;
-    width: 80%;
-    max-width: 600px;
-    margin: auto;
-    border: 6px double #f9970e;
-}
-
-.article-title {
-    position: absolute;
-    top: 0px;
-    width: 100%;
-    margin: auto;
-    z-index: 1;
-    color: #f9970e;
-    text-shadow:
-        -2px -2px 2px #222,
-        2px -2px 2px #222,
-        -2px 2px 2px #222,
-        2px 2px 2px #222;
-}
-
 article img {
     position: relative;
     z-index: 0;
@@ -30,11 +8,6 @@ article img {
     max-width: 600px;
     object-fit: contain;
     border-bottom: 3px solid #f9970e;
-}
-
-.article-text {
-    margin: 0.5rem;
-    text-align: justify;
 }
 
 #register-button {
@@ -95,10 +68,6 @@ fieldset {
 
 #register-form p {
     margin-bottom: 0px;
-}
-
-.fine-print {
-    font-size: 0.75rem;
 }
 
 #submit-button {

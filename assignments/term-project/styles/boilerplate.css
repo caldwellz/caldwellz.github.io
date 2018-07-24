@@ -72,6 +72,42 @@ s {
     color: red;
 }
 
+article {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    border: 6px double #f9970e;
+}
+
+.article-title {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    margin: auto;
+    z-index: 1;
+    color: #f9970e;
+    text-shadow:
+        -2px -2px 2px black,
+        2px -2px 2px black,
+        -2px 2px 2px black,
+        2px 2px 2px black;
+}
+
+article iframe {
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.article-text {
+    margin: 0.5rem;
+    text-align: justify;
+}
+
+.fine-print {
+    font-size: 0.75rem;
+}
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301

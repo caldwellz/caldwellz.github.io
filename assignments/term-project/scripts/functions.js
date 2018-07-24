@@ -32,6 +32,11 @@ zc.activateParent = function (obj) {
     objParent.addClass(zc.activeClass);
 }
 
+zc.toggleParent = function (obj) {
+    var objParent = $(obj).parent();
+    objParent.toggleClass(zc.activeClass);
+}
+
 zc.toggleParentUnique = function (obj, instanceClass) {
     var parent = $(obj).parent();
 
