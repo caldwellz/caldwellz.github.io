@@ -12,7 +12,7 @@ req.onload = function() {
        var tr = $("<tr>").append(
            $("<td>").text(item.name),
            $("<td>").text('$' + item.price.toFixed(2)));
-       $("#services-box table").append(tr);
+       $("#content-box table").append(tr);
    });
 }
 req.responseType = 'json';
