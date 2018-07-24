@@ -5,7 +5,7 @@
     <title>Adventure Tours | The Mountain Spoke</title>
     <meta name="description" content="Exciting bike adventure tours offered every day at The Mountain Spoke bicycle shop in Bozeman, MT." />
     <link rel="preload" href="modules/head.html" />
-    <link rel="stylesheet" href="styles/page-tours.css">
+    <link rel="stylesheet" href="styles/mod-accordion.css">
 </head>
 
 <body>
@@ -17,6 +17,32 @@
     <link rel="preload" href="modules/nav.html" />
     <div id="content-box">
         <h2>Adventure Tours</h2>
+        <p class="justify-box">At The Mountain Spoke, we offer daily guided adventure tours all throughout the biking season!
+        Click below to see meeting locations and other details!</p>
+        <div class="accordion-item">
+            <button class="accordion-button" onclick="zc.toggleParentUnique(this, 'accordion-item')">
+            Upper Scenic Loop</button>
+            <div class="accordion-details">
+                Come enjoy a refreshing scenic ride with stops including Rose Park,
+                the Riverside Country Club, and the Bridger Creek Golf Course!
+                <br /><b>Skill Level: </b>Beginner
+                <br /><b>Length: </b>10.5 miles
+                <br /><b>Cost: </b>&#36;10
+                <br /><b>Meet at: </b>Rose Park &#64; 2pm
+            </div>
+        </div>
+        <div class="accordion-item">
+            <button class="accordion-button" onclick="zc.toggleParentUnique(this, 'accordion-item')">
+            Tour de Bozeman</button>
+            <div class="accordion-details">
+                Whether you're new to the area or just want to see what you've been missing,
+                come join us for a grand guided bike tour of Bozeman and all it has to offer!
+                <br /><b>Skill Level: </b>Intermediate
+                <br /><b>Length: </b>30 miles
+                <br /><b>Cost: </b>&#36;20
+                <br /><b>Meet at: </b>Bozeman City Hall &#64; 4pm
+            </div>
+        </div>
     </div>
     <link rel="preload" href="modules/footer.html" />
 

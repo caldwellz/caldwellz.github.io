@@ -9,7 +9,6 @@
 /* ==========================================================================
    Basic site-wide config
    ========================================================================== */
-
 * {
     box-sizing: border-box;
 }
@@ -60,6 +59,17 @@ table td {
     margin-left: auto;
     margin-right: auto;
     text-align: justify;
+}
+
+/* Turn back into a strike-through tag */
+s {
+    color: grey;
+    text-decoration: line-through;
+}
+
+.bold-red {
+    font-weight: bold;
+    color: red;
 }
 
 /*
