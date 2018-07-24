@@ -55,7 +55,7 @@ fieldset {
 }
 
 #register-form fieldset > * {
-    flex 1 98%;
+    flex: 1 98%;
     margin-left: auto;
     margin-right: auto;
 }
