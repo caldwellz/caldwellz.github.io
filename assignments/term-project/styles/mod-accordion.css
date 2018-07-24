@@ -1,59 +1,61 @@
 /**********************************************
-* Sales gallery rules
+* Accordion menu rules
 **********************************************/
-.sales-item {
+.accordion-item {
     width: 80%;
     margin: auto;
+    text-align: center;
 }
 
-button.accordion {
+.accordion-button {
     width: 100%;
     padding: 0.5rem 0px 0.5rem 0px;
     background-color: #f9970e;
     border: 2px solid black;
 }
 
-button.accordion:hover,
-button.accordion:active {
+.accordion-button:hover,
+.accordion-button:active {
     background-color: #ffcf54;
 }
 
-.sales-item figure {
+.accordion-item figure {
     max-height: 0px;
     overflow: hidden;
-    transition: max-height 0.4s ease-out;
+    transition: max-height 0.3s ease-out;
     width: 100%;
     margin: 0px 0px 2px 0px;
     text-align: center;
     background-color: white;
 }
 
-.sales-item.active figure {
+.accordion-item.active figure {
     max-height: 100rem;
     border: 2px solid black;
     border-top: none;
 }
 
-.sales-item.active figure img {
+.accordion-item.active figure img {
     max-width: 100%;
     object-fit: contain;
     border-bottom: 2px solid black;
 }
 
-.sales-item.active s {
+.accordion-item.active s {
     color: grey;
     text-decoration: line-through;
 }
 
-.sales-item.active b {
+.accordion-item.active b {
     color: red;
 }
 
-.sales-item.active h3 {
+.accordion-item.active h3 {
     margin: 0px;
 }
 
-.bike-features {
-    margin: 0.2rem 0.5rem 0.2rem 0.5rem;
+.accordion-details {
+    width: 97%;
+    margin: 0.2rem auto 0.2rem auto;
     text-align: justify;
 }
