@@ -28,6 +28,7 @@ body {
 /*    background: linear-gradient(#009000, #00f200, #009000); */
     background-color: khaki;
     text-align: center;
+    height: 100%;
     padding: 0.5rem;
 }
 
@@ -102,6 +103,10 @@ article iframe {
 .article-text {
     margin: 0.5rem;
     text-align: justify;
+}
+
+.hidden {
+    display: none;
 }
 
 .fine-print {

@@ -54,6 +54,14 @@ zc.toggleParentUnique = function (obj, instanceClass) {
     }
 }
 
+zc.countClass = function (className) {
+    var count = 0;
+    $('.' + className).each(function(i, instance) {
+        count++;
+    });
+    return count;
+}
+
 zc.wayfind = function () {
     // Will need modification to support links using anything other than a plain filename reference, but shouldn't be too hard
     // TODO: Use foreach() to test .endsWith(page) on all nav hrefs
