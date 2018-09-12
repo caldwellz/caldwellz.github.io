@@ -1,0 +1,88 @@
+/**********************************************
+* Events page rules
+**********************************************/
+article img {
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    max-width: 600px;
+    object-fit: contain;
+    border-bottom: 3px solid #f9970e;
+}
+
+#register-button {
+    width: 40%;
+    padding: 0.25rem;
+    background-color: #ff0505;
+}
+
+#register-button:hover {
+    background-color: #ff4040;
+}
+
+#registration #register-form {
+    display: none;
+}
+
+#registration.active #register-button {
+    display: none;
+}
+
+#registration.active #register-form {
+    display: block;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    border: 6px double #ff0505;
+}
+
+#registration {
+    max-width: 80%;
+    margin: 0.5rem auto 0.5rem auto;
+    text-align: center;
+}
+
+#registration > * {
+    width: 100%;
+}
+
+fieldset {
+    display: flex;
+    flex-flow: column nowrap;
+    object-fit: contain;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#register-form fieldset > * {
+    flex: 1 98%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#register-form input,
+#register-form textarea,
+#registration button {
+    border: 2px outset black;
+}
+
+#register-form p {
+    margin-bottom: 0px;
+}
+
+#submit-button {
+    width: 80%;
+    padding: 0.25rem;
+    margin: 0.5rem 0px 0.5rem 0px;
+    background-color: #f9970e;
+}
+
+#submit-button:hover,
+#submit-button:active {
+    background-color: #ffcf54;
+}
+
+#thanks {
+    text-align: center;
+    font-weight: bolder;
+}

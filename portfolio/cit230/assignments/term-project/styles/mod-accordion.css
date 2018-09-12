@@ -1,0 +1,82 @@
+/**********************************************
+* Accordion menu rules
+**********************************************/
+.accordion-item {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.accordion-button {
+    width: 100%;
+    padding: 0.5rem 0px 0.5rem 0px;
+    background-color: #f9970e;
+    border: 2px solid black;
+    border-bottom: none;
+}
+
+.accordion-button:hover,
+.accordion-button:active {
+    background-color: #ffcf54;
+}
+
+.accordion-item figure,
+.accordion-item .accordion-details {
+    background-color: white;
+}
+
+.accordion-item figure,
+.accordion-item form,
+.accordion-item .accordion-details {
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    width: 100%;
+    border: 2px solid black;
+    border-top: none;
+    margin: 0px 0px 2px 0px;
+}
+
+.accordion-item .accordion-details {
+    padding: 0px;
+}
+
+.accordion-item.active figure,
+.accordion-item.active form,
+.accordion-item.active .accordion-details {
+    max-height: 100rem;     /* Just an arbitrary obscenely large value to accommodate any possible height */
+    border-top: 2px solid black;
+}
+
+.accordion-item.active .accordion-details {
+    padding: 4px;
+}
+
+.accordion-item.active figure img {
+    max-width: 100%;
+    object-fit: contain;
+    border-bottom: 2px solid black;
+}
+
+.accordion-item.active h3 {
+    margin: 0px;
+}
+
+.accordion-item input[type=submit] {
+    width: 80%;
+    padding: 0.25rem;
+    margin: 0.5rem 0px 0.5rem 0px;
+    background-color: #f9970e;
+}
+
+
+.accordion-item input[type=submit]:hover,
+.accordion-item input[type=submit]:active {
+    background-color: #ffcf54;
+}
+
+.accordion-details {
+    width: 97%;
+    margin: 0.2rem auto 0.2rem auto;
+    text-align: justify;
+}

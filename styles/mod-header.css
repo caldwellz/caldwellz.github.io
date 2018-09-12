@@ -1,0 +1,31 @@
+/**************************************************************
+* Header module rules
+***************************************************************/
+header {
+    min-height: 115px;
+    background-image: url("../img/header.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    text-align: center;
+}
+
+#site-title {
+    padding-top: 1.5rem;
+}
+
+#site-title,
+#site-subtitle {
+    color: #57a0d3;
+    text-shadow:
+        -2px -2px 3px black,
+        2px -2px 3px black,
+        -2px 2px 3px black,
+        2px 2px 3px black;
+    /*    background: linear-gradient(#ffcf54, #e08404);
+    -webkit-background-clip: text; */
+    padding-bottom: 5px;
+    margin: 0px;
+	margin-left: 2rem;
+	text-align: left;
+}

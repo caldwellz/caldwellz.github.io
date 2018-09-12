@@ -1,0 +1,82 @@
+/**************************************************************
+* Navigation bar rules, baseline is screen widths under ~600px
+***************************************************************/
+
+nav {
+    display: flex;
+    text-align: center;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+
+}
+
+#burger-box {
+    width: 100%;
+    background: linear-gradient(#0e4d92, #588bae, #0e4d92);
+    border: 1px solid black;
+    text-align: left;
+}
+
+#hamburger {
+    background: linear-gradient(#0e4d92, #588bae, #0e4d92);
+    color: inherit;
+    border: none;
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+nav a {
+    display: none;
+    flex: 1 100%;
+    max-width: 10rem;
+    padding: 0.5rem;
+    background: linear-gradient(#0e4d92, #588bae, #0e4d92);
+    color: inherit;
+    text-decoration: none;
+    border: 1px solid black;
+    z-index: 0;
+}
+
+nav a.responsive {
+    display: inline;
+}
+
+#hamburger:hover,
+#hamburger:active,
+nav a:hover,
+nav a:focus {
+    background: linear-gradient(#588bae, #57a0d3, #588bae);
+    z-index: 3;
+}
+
+a.current {
+    font-weight: bolder;
+    box-shadow:
+        1px  0px  2px #222,
+        -1px -1px 2px #222,
+        0px  4px  5px #222;
+    z-index: 2;
+}
+
+
+/* Rules for screens at least 37.5em (usually 600px) wide */
+@media only screen and (min-width: 37.5em) {
+    nav {
+        flex-flow: row nowrap;
+        border-right: none;
+        border-left: none;
+    }
+
+    nav a,
+    nav a.responsive {
+        display: inline;
+        font-size: 1.25rem;
+        max-width: 100%;
+    }
+
+    #burger-box {
+        display: none;
+    }
+}

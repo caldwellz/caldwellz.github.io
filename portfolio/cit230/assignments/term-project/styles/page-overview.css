@@ -1,0 +1,13 @@
+/* Video Overview page */
+#video-box {
+    width: 100%;
+    border: 1px solid black;
+}
+
+video {
+    object-fit: contain;
+    margin: auto;
+    width: 100%;
+    max-width: 1360px;
+    max-height: 900px;
+}
