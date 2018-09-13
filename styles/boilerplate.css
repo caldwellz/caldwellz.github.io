@@ -16,6 +16,7 @@
 
 html {
     color: white;
+    background-color: #0e4d92;
     font-size: 1em;
 }
 
@@ -27,14 +28,21 @@ body {
 
 #content-box {
 /*    background: linear-gradient(#009000, #00f200, #009000); */
-    background-color: #0e4d92;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    color: black;
+    background-color: white;
     text-align: center;
     height: 100%;
     padding: 0.5rem;
 }
 
 a {
-	color: khaki;
+    color: khaki;
+}
+
+#content-box a {
+    color: #0e4d92;
 }
 
 h2 {

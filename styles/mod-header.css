@@ -2,16 +2,23 @@
 * Header module rules
 ***************************************************************/
 header {
+    display: flex;
     min-height: 115px;
-    background-image: url("../img/header.jpg");
+    background-image: url("../images/header.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto;
     text-align: center;
 }
 
+#header-photo {
+    max-height: 115px;
+    min-width: 115px;
+    border: 1px solid black;
+}
+
 #site-title {
-    padding-top: 1.5rem;
+    padding-top: 15px;
 }
 
 #site-title,
@@ -24,8 +31,7 @@ header {
         2px 2px 3px black;
     /*    background: linear-gradient(#ffcf54, #e08404);
     -webkit-background-clip: text; */
-    padding-bottom: 5px;
     margin: 0px;
-	margin-left: 2rem;
-	text-align: left;
+    margin-left: 2rem;
+    text-align: left;
 }
