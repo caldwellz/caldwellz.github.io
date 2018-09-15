@@ -2,7 +2,8 @@
 * Accordion menu rules
 **********************************************/
 .accordion-item {
-    width: 80%;
+    width: 100%;
+    padding: 2px;
     margin: auto;
     text-align: center;
 }
@@ -10,14 +11,14 @@
 .accordion-button {
     width: 100%;
     padding: 0.5rem 0px 0.5rem 0px;
-    background-color: #f9970e;
+    background-color: #0277bd;
     border: 2px solid black;
     border-bottom: none;
 }
 
 .accordion-button:hover,
 .accordion-button:active {
-    background-color: #ffcf54;
+    background-color: #57a0d3;
 }
 
 .accordion-item figure,
@@ -29,12 +30,13 @@
 .accordion-item form,
 .accordion-item .accordion-details {
     max-height: 0px;
-    overflow: hidden;
-    transition: max-height 0.3s ease-out;
     width: 100%;
     border: 2px solid black;
-    border-top: none;
+    border-top-width: 0px;
     margin: 0px 0px 2px 0px;
+    transition: max-height 0.3s ease;
+    transition: border-top-width 0.0s linear;
+    overflow: hidden;
 }
 
 .accordion-item .accordion-details {
@@ -45,7 +47,7 @@
 .accordion-item.active form,
 .accordion-item.active .accordion-details {
     max-height: 100rem;     /* Just an arbitrary obscenely large value to accommodate any possible height */
-    border-top: 2px solid black;
+    border-top-width: 2px;
 }
 
 .accordion-item.active .accordion-details {
@@ -66,13 +68,13 @@
     width: 80%;
     padding: 0.25rem;
     margin: 0.5rem 0px 0.5rem 0px;
-    background-color: #f9970e;
+    background-color: #0277bd;
 }
 
 
 .accordion-item input[type=submit]:hover,
 .accordion-item input[type=submit]:active {
-    background-color: #ffcf54;
+    background-color: #57a0d3;
 }
 
 .accordion-details {

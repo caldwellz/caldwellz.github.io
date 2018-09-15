@@ -5,6 +5,7 @@
 "use strict";
 var zc = {};
 zc.activeClass = "active";
+zc.infoObfuscated = true;
 
 zc.loadModules = function () {
     $("link[rel='preload']").each(function () {
@@ -72,3 +73,34 @@ zc.wayfind = function () {
         elem.addClass("current");
     }
 }
+
+// Original from http://jsfromhell.com/string/rot13
+// Modified to rotate numbers as well.
+String.prototype.rot13 = function(){
+    return this.replace(/[a-zA-Z]/g, function(c){
+        return String.fromCharCode((c <= "Z" ? 90 : 122) >= (c = c.charCodeAt(0) + 13) ? c : c - 26);
+    }).replace(/[0-9]/g, function(c){
+        return String.fromCharCode(57 >= (c = c.charCodeAt(0) + 5) ? c : c - 10);
+    });
+};
+
+// Use basic info obfuscation that requires both a mouseover
+// and a click, to help prevent automated spambots from
+// scraping my info from the page source.
+zc.toggleObfuscation = function() {
+    $("#contact-info span").each(function() {
+        $(this).text($(this).text().rot13());
+    });
+};
+
+zc.setMousedOver = function() {
+    zc.mousedOver = true;
+}
+
+zc.revealContactInfo = function(obj) {
+    zc.toggleParentUnique(obj, 'accordion-item');
+    if (zc.infoObfuscated && zc.mousedOver) {
+        zc.toggleObfuscation();
+        zc.infoObfuscated = false;
+    }
+};
