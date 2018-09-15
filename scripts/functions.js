@@ -88,9 +88,11 @@ String.prototype.rot13 = function(){
 // and a click, to help prevent automated spambots from
 // scraping my info from the page source.
 zc.toggleObfuscation = function() {
-    $("#contact-info span").each(function() {
-        $(this).text($(this).text().rot13());
-    });
+    if (zc.mousedOver) {
+        $("#contact-info span").each(function() {
+            $(this).text($(this).text().rot13());
+        });
+    }
 };
 
 zc.setMousedOver = function() {
