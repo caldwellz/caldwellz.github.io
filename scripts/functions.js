@@ -15,7 +15,6 @@ zc.loadModules = function () {
         xhttp.responseType = "text";
         xhttp.onreadystatechange = function () {
             if (this.readyState === 4 && this.status === 200) {
-                // Assume all modules are wrapped in <template>, so get only the stuff inside
                 elem.after(this.responseText);
             }
         };
