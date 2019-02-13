@@ -23,18 +23,11 @@ html {
 body {
     font-family: 'Rubik', Arial, sans-serif;
     max-width: 75rem;
-    margin: auto;
+    margin: 10px auto 10px auto;
 }
 
 a {
     color: khaki;
-}
-
-h2 {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    max-height: 1em;
-    line-height: 1;
 }
 
 li {
@@ -47,7 +40,9 @@ li {
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: stretch;
-    padding: 0px 0.5rem 0.5rem 0px;
+
+    margin: 0 auto 0 auto;
+    padding: 10px 0 10px 0;
     border-left: 1px solid black;
     border-right: 1px solid black;
     color: black;
@@ -66,16 +61,15 @@ li {
 }
 
 #content-box > h2 {
-    flex: 1 100%;
+    width: 100%;
     text-align: center;
-    margin-top: 5px;
+    margin: 0;
 }
 
-.LI-profile-badge {
-    flex: 1 auto;
+#content-box > p {
+    max-width: 80%;
     margin-left: auto;
-    border: 2px solid black;
-    max-width: 254px;
+    margin-right: auto;
 }
 
 table {
@@ -105,6 +99,8 @@ table td {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
     text-align: center;
 }
 
