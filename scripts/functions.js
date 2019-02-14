@@ -86,22 +86,19 @@ String.prototype.rot13 = function(){
 // Use basic info obfuscation that requires both a mouseover
 // and a click, to help prevent automated spambots from
 // scraping my info from the page source.
+// TODO: Find a better event; I don't know if screen readers for the visually impaired trigger mouseovers
 zc.toggleObfuscation = function() {
-    if (zc.mousedOver) {
-        $("#contact-info span").each(function() {
-            $(this).text($(this).text().rot13());
-        });
+    if (zc.allowDecipher) {
+        $(".obfuscate").html($(".obfuscate").html().rot13());
+        zc.infoObfuscated = !zc.infoObfuscated;
     }
 };
 
-zc.setMousedOver = function() {
-    zc.mousedOver = true;
+zc.setAllowDecipher = function() {
+    zc.allowDecipher = true;
 }
 
 zc.revealContactInfo = function(obj) {
     zc.toggleParentUnique(obj, 'accordion-item');
-    if (zc.infoObfuscated && zc.mousedOver) {
-        zc.toggleObfuscation();
-        zc.infoObfuscated = false;
-    }
+    zc.toggleObfuscation();
 };
