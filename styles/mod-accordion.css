@@ -45,6 +45,12 @@
     overflow: hidden;
 }
 
+.accordion-item figcaption {
+    font-size: 0.9rem;
+    font-style: italic;
+    padding: 5px;
+}
+
 .accordion-item .accordion-details {
     padding: 0px;
 }
