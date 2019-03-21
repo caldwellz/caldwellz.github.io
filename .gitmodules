@@ -1,0 +1,3 @@
+[submodule "xelandria"]
+	path = xelandria
+	url = https://github.com/zc101/xelandria.git
