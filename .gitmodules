@@ -2,3 +2,7 @@
 	path = xelandria
 	url = https://github.com/zc101/xelandria.git
 	branch = master
+[submodule "ubberon"]
+	path = ubberon
+	url = https://github.com/zc101/ubberon.git
+	branch = master
