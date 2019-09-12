@@ -6,3 +6,6 @@
 	path = ubberon
 	url = https://github.com/zc101/ubberon.git
 	branch = master
+[submodule "crosswyrd"]
+	path = crosswyrd
+	url = https://github.com/zc101/crosswyrd.git
