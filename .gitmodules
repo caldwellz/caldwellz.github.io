@@ -9,3 +9,6 @@
 [submodule "crosswyrd"]
 	path = webprojects/crosswyrd
 	url = https://github.com/zc101/crosswyrd.git
+[submodule "webprojects/borsippia"]
+	path = webprojects/borsippia
+	url = https://github.com/zc101/borsippia.git
