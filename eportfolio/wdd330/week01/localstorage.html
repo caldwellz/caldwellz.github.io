@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Editor - LocalStorage example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  </head>
+  <body>
+    <header><h2>HTML Editor</h2></header>
+    <main>
+      <button onclick="saveContent()">Save content</button>
+      <button onclick="loadSavedContent()">Load saved content</button>
+      <button onclick="renderContent()">Render HTML content</button>
+      <textarea id="content_editor" rows="10" style="width: 100%; margin: 0.5rem;" placeholder="Enter your content here..."></textarea>
+    </main>
+    <hr />
+    <section id="content_display"></section>
+
+    <script>
+      var contentKey = "awesome_content_name";
+
+      function saveContent() {
+        var contentHTML = document.getElementById("content_editor").value;
+        localStorage.setItem(contentKey, contentHTML);
+      }
+
+      function loadSavedContent() {
+        var contentHTML = localStorage.getItem(contentKey);
+        document.getElementById("content_editor").value = contentHTML;
+      }
+
+      function renderContent() {
+        var contentHTML = document.getElementById("content_editor").value;
+        document.getElementById("content_display").innerHTML = contentHTML;
+      }
+    </script>
+  </body>
+</html>
