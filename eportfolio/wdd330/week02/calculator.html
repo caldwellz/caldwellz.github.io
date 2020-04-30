@@ -8,21 +8,41 @@
   <body>
     <header><h2>Calculator</h2></header>
     <main>
-      <input type="text" id="input-1">
-      <input type="text" id="input-2">
-      <button onclick="displaySum()">+</button>
+      <input type="number" id="input-1">
+      <input type="number" id="input-2">
+      <br />
+      <button onclick="getInputs(doAdd)">+</button>
+      <button onclick="getInputs(doSubtract)">-</button>
+      <button onclick="getInputs(doMultiply)">x</button>
     </main>
-    <p>Output: <span id="output"></span></p>
+    <p>Result: <span id="result"></span></p>
 
     <script>
-      function displaySum() {
-        var input1 = Number(document.getElementById("input-1").value);
-        var input2 = Number(document.getElementById("input-2").value);
-        if (!isNaN(input1) && !isNaN(input2)) {
-          var sum = input1 + input2;
-          document.getElementById("output").innerHTML = sum;
+      function displayResult(result) {
+        document.getElementById("result").innerHTML = result;
+      }
+
+      function getInputs(callback) {
+        if (typeof(callback) === 'function') {
+          var input1 = Number(document.getElementById("input-1").value);
+          var input2 = Number(document.getElementById("input-2").value);
+          if (!isNaN(input1) && !isNaN(input2)) {
+            callback(input1, input2);
+          }
         }
       }
+
+      function doAdd(input1, input2) {
+        var result = input1 + input2;
+        displayResult(result);
+      }
+
+      var doSubtract = function(input1, input2) {
+        var result = input1 - input2;
+        displayResult(result);
+      };
+
+      var doMultiply = (input1, input2) => displayResult(input1 * input2);
     </script>
   </body>
 </html>
