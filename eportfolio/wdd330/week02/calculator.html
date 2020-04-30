@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>W02 Calculator | WDD330 Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  </head>
+  <body>
+    <header><h2>Calculator</h2></header>
+    <main>
+      <input type="text" id="input-1">
+      <input type="text" id="input-2">
+      <button onclick="displaySum()">+</button>
+    </main>
+    <p>Output: <span id="output"></span></p>
+
+    <script>
+      function displaySum() {
+        var input1 = Number(document.getElementById("input-1").value);
+        var input2 = Number(document.getElementById("input-2").value);
+        if (!isNaN(input1) && !isNaN(input2)) {
+          var sum = input1 + input2;
+          document.getElementById("output").innerHTML = sum;
+        }
+      }
+    </script>
+  </body>
+</html>
