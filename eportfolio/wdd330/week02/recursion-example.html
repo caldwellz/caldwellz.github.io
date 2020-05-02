@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>W02 Recursion Example | WDD330 Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  </head>
+  <body>
+    <header><h2>Factorial Calculator</h2></header>
+    <main>
+      <input type="number" id="input-1">
+      <br />
+      <button onclick="doFactorial()">Factorial</button>
+    </main>
+    <p>Result: <span id="result"></span></p>
+
+    <script>
+      function displayResult(result) {
+        document.getElementById("result").innerHTML = result;
+      }
+
+      function calcFactorial(input) {
+        if (input < 0)
+          return "Invalid input";
+        if (input > 1)
+          return input * calcFactorial(input - 1);
+        else
+          return 1;
+      }
+
+      function doFactorial() {
+        var input = Number(document.getElementById("input-1").value);
+        if (!isNaN(input))
+          displayResult(calcFactorial(input));
+      }
+    </script>
+  </body>
+</html>
