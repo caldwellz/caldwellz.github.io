@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>W04 OOP/Form Example | WDD330 Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  </head>
+  <body>
+    <header>
+      <a onclick="window.history.back()" href="#"><-- Go back</a>
+      <h2>Temperature converter (OOP/Form Example)</h2>
+    </header>
+    <main>
+      <form action="#">
+        <label for="fahrenheitInput">Fahrenheit</label>
+        <br>
+        <input type="number" id="fahrenheitInput" name="fahrenheitInput" onchange="convertFahrenheit()">
+        <br>
+        <label for="celsiusInput">Celsius</label>
+        <br>
+        <input type="number" id="celsiusInput" name="celsiusInput" onchange="convertCelsius()">
+        <br>
+        <label for="kelvinInput">Kelvin</label>
+        <br>
+        <input type="number" id="kelvinInput" name="kelvinInput" onchange="convertKelvin()">
+        <br>
+        <br>
+        <input type="reset">
+      </form>
+    </main>
+
+    <script>
+      // Inspired by https://eloquentjavascript.net/code/#6
+      class Temperature {
+        constructor() {
+          this._fahrenheit = 0;
+          this._celsius = 0;
+          this._kelvin = 0;
+        }
+
+        get fahrenheit() {
+          return this._fahrenheit;
+        }
+
+        get celsius() {
+          return this._celsius;
+        }
+
+        get kelvin() {
+          return this._kelvin;
+        }
+
+        set fahrenheit(value) {
+          this._fahrenheit = value;
+          this._celsius = (value - 32) / 1.8;
+          this._kelvin = this._celsius + 273.15;
+        }
+
+        set celsius(value) {
+          this._celsius = value;
+          this._fahrenheit = value * 1.8 + 32;
+          this._kelvin = value + 273.15;
+        }
+
+        set kelvin(value) {
+          this._kelvin = value;
+          this._celsius = value - 273.15;
+          this._fahrenheit = this._celsius * 1.8 + 32;
+        }
+
+        static fromFahrenheit(value) {
+          var temp = new Temperature();
+          temp.fahrenheit = value;
+          return temp;
+        }
+
+        static fromCelsius(value) {
+          var temp = new Temperature();
+          temp.celsius = value;
+          return temp;
+        }
+
+        static fromKelvin(value) {
+          var temp = new Temperature();
+          temp.kelvin = value;
+          return temp;
+        }
+      }
+
+
+      function convertFahrenheit() {
+        var f = document.getElementById("fahrenheitInput").value;
+        var temp = Temperature.fromFahrenheit(f);
+        document.getElementById("celsiusInput").value = temp.celsius;
+        document.getElementById("kelvinInput").value = temp.kelvin;
+      }
+
+      function convertCelsius() {
+        var c = document.getElementById("celsiusInput").value;
+        var temp = Temperature.fromCelsius(c);
+        document.getElementById("fahrenheitInput").value = temp.fahrenheit;
+        document.getElementById("kelvinInput").value = temp.kelvin;
+      }
+
+      function convertKelvin() {
+        var k = document.getElementById("kelvinInput").value;
+        var temp = Temperature.fromKelvin(k);
+        document.getElementById("fahrenheitInput").value = temp.fahrenheit;
+        document.getElementById("celsiusInput").value = temp.celsius;
+      }
+    </script>
+  </body>
+</html>
