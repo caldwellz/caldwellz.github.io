@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>W03 DOM/Event Example | WDD330 Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  </head>
+  <body>
+    <header><h2>Color Randomizer</h2></header>
+    <main>
+      <div id="target" onclick="recolor()">* Click or tap on this text to change the color: <span id="colorDesc"></span></div>
+    </main>
+
+    <script>
+      document.getElementById("target").addEventListener("touchend", recolor, false);
+
+      function recolor() {
+        var red = Math.floor(Math.random() * 256).toString(16);
+        var green = Math.floor(Math.random() * 256).toString(16);
+        var blue = Math.floor(Math.random() * 256).toString(16);
+        var newColor = '#' + red + green + blue;
+        document.getElementById("colorDesc").innerText = newColor;
+        document.getElementById("target").style.color = newColor;
+      }
+    </script>
+  </body>
+</html>
