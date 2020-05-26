@@ -1,0 +1,23 @@
+
+#new-task-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: fixed;
+  bottom: 8px;
+  width: calc(100% - 16px);
+  border: 2px solid black;
+  z-index: 10;
+}
+
+
+#new-task-content {
+  width: calc(100% - 2rem);
+}
+
+
+#new-task-btn {
+  font-size: 1.5rem;
+  padding: 0;
+  background-color: #55ff55;
+}

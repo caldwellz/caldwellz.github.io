@@ -1,0 +1,23 @@
+@import 'tasks.css';
+@import 'task-filter.css';
+@import 'new-task.css';
+
+body {
+  box-sizing: border-box;
+  display: block;
+  margin: 8px;
+  font-family: sans-serif;
+}
+
+
+main,
+#new-task-box {
+  max-width: 400px;
+  margin: auto;
+}
+
+
+header {
+  width: 100%;
+  text-align: center;
+}

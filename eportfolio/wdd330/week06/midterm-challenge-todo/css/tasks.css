@@ -1,0 +1,39 @@
+
+.todo-item {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-top: 2px solid black;
+}
+
+
+.task-content {
+  display: inline-block;
+  width: calc(100% - 56px);
+  min-height: 20px;
+}
+
+
+.completed-task {
+  text-decoration: line-through;
+  color: gray;
+}
+
+
+.task-checkbox,
+.task-remove-btn {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  margin: 4px;
+}
+
+
+.task-remove-btn {
+  font-size: 1rem;
+  background-color: #ff5555;
+  border: 2px solid black;
+  border-radius: 4px;
+}

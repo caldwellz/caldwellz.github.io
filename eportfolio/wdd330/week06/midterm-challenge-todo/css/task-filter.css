@@ -1,0 +1,41 @@
+
+#task-filter {
+  display: flex;
+  align-items: center;
+  border: 2px solid black;
+}
+
+
+#tasks-left {
+  text-align: center;
+  flex: 4 4 auto;
+}
+
+
+.task-filter-btn {
+  border: none;
+}
+
+
+.task-filter-btn:disabled {
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+
+#task-filter-all {
+  flex: 1 1 auto;
+  border-left: 1px solid grey;
+}
+
+
+#task-filter-active {
+  flex: 2 2 auto;
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+}
+
+
+#task-filter-completed {
+  flex: 3 3 auto;
+}
