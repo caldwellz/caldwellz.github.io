@@ -14,25 +14,32 @@
 
 .task-filter-btn {
   border: none;
+  border-left: 1px solid grey;
+  background-color: #dddddd;
+  color: black;
 }
 
 
 .task-filter-btn:disabled {
   border: 1px solid black;
   border-radius: 4px;
+  background-color: #444444;
+  color: white;
+}
+
+
+.task-filter-btn:disabled + .task-filter-btn {
+  border-left: none;
 }
 
 
 #task-filter-all {
   flex: 1 1 auto;
-  border-left: 1px solid grey;
 }
 
 
 #task-filter-active {
   flex: 2 2 auto;
-  border-left: 1px solid grey;
-  border-right: 1px solid grey;
 }
 
 
