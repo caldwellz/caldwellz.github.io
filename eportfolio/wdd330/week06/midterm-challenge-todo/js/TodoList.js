@@ -96,7 +96,7 @@ export default class TodoList {
       output += ' completed-task';
 
     output += '">' + todo.content + '</span>';
-    output += '<button class="task-remove-btn" data-task-id="' + todo.id + '">&times;</button></div>';
+    output += '<button class="task-remove-btn" data-task-id="' + todo.id + '">X</button></div>';
     
     return output;
   }

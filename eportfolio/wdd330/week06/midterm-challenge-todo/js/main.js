@@ -7,6 +7,13 @@ var todoFilter = 'all';
 reloadTasks();
 
 
+// Fix a weird cross-browser display quirk
+if (window.navigator.userAgent.search("Firefox") > -1)
+  document.getElementById("new-task-content").rows = 1;
+else
+  document.getElementById("new-task-content").rows = 2;
+
+
 // Function to reload tasks / task count and set up event handlers
 function reloadTasks() {
   // Filter the todos
