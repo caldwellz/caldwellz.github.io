@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>W07 AJAX/Fetch Example | WDD330 Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+      body {
+        margin: 1rem;
+      }
+
+      main {
+        border: 2px solid black;
+        padding: 0.5rem;
+        margin-top: 1rem;
+      }
+    </style>
+  </head>
+  
+  <body>
+    <header>
+      <a onclick="window.history.back()" href="#">&lt;-- Go back</a>
+      <h2>Post retriever (AJAX/Fetch Example)</h2>
+      <p>Fetches and displays a random sample post from <a href="https://jsonplaceholder.typicode.com/posts">jsonplaceholder.typicode.com/posts</a></p>
+      <button onclick="loadRandomPost(updatePost)">Load a new one!</button>
+    </header>
+
+    <main>
+      <h3 id="post-title"></h3>
+      <div id="post-content"></div>
+    </main>
+
+    <script>
+      // Returns a random item from an array
+      function getRandomItem(array) {
+        if (array && array.length) {
+          var index = Math.floor(Math.random() * array.length);
+          return array[index];
+        }
+        else
+          return null;
+      }
+      
+      
+      // Fetch all posts then send a random one to the callback
+      function loadRandomPost(callback) {
+        if (typeof(callback) === 'function') {
+          fetch('http://jsonplaceholder.typicode.com/posts')
+            .then(response => response.json())
+            .then(list => callback(getRandomItem(list)));
+        }
+      }
+
+
+      // Render the given post
+      function updatePost(postObj) {
+        document.getElementById("post-title").innerHTML = postObj.title;
+        document.getElementById("post-content").innerHTML = postObj.body;
+      }
+    </script>
+  </body>
+</html>
