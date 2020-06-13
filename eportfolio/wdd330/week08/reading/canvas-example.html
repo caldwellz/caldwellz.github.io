@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>W08 Canvas Example | WDD330 Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+      main {
+        padding: 1rem;
+        margin: auto;
+        text-align: center;
+      }
+
+      canvas {
+        border: 2px solid black;
+      }
+
+      h2 {
+        text-align: center;
+      }
+
+      #terminal-sprite {
+        display: none;
+      }
+    </style>
+  </head>
+  
+  <body>
+    <header>
+      <a onclick="window.history.back()" href="#">&lt;-- Go back</a>
+      <h2>Screensaver (Canvas Example)</h2>
+    </header>
+
+    <main>
+      <canvas id="canvas" width="320" height="240"></canvas>
+      <!-- From https://opengameart.org/content/communication-terminal-32x32 -->
+      <img id="terminal-sprite" alt="Terminal sprite" src="https://opengameart.org/sites/default/files/styles/medium/public/CommTerminalPreview.gif" width="64" height="64" />
+    </main>
+
+    <script>
+      var canvas = document.getElementById('canvas');
+      var ctx = canvas.getContext('2d');
+      var sprite = document.getElementById('terminal-sprite');
+      var maxX = canvas.width - sprite.width;
+      var maxY = canvas.height - sprite.height;
+      var currentX = 40;
+      var currentY = 1;
+      var direction = 0;
+
+      function updateSprite() {
+        // Check for edge bounce and change direction if needed
+        if (currentX <= 0 || currentX >= maxX)
+          direction = (direction + 2) % 4;
+        if (currentY <= 0)
+          direction--;
+        if (currentY >= maxY)
+          direction++;
+
+        // Move in the current direction
+        // 0 = SE; 1 = NE; 2 = SW; 3 = NW
+        if (direction % 2)
+          currentY--;
+        else
+          currentY++;
+        if (direction < 2)
+          currentX++;
+        else
+          currentX--;
+
+        // Clear the canvas and draw the sprite
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.drawImage(sprite, currentX, currentY);
+      }
+
+      sprite.addEventListener('load', e => {
+        setInterval(updateSprite, 7);
+      });
+    </script>
+  </body>
+</html>
