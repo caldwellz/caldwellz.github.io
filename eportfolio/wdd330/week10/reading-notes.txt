@@ -1,0 +1,5 @@
+Notes
+
+The <output> element is new to me. I wonder which advantages it has over other common output elements such as a regular <div>?
+
+I wonder what the cross-browser support is like for the Constraint Validation API?
