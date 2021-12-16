@@ -8,7 +8,7 @@ zc.activeClass = "active";
 zc.infoObfuscated = true;
 
 zc.loadModules = function () {
-    $("link[rel='preload']").each(function () {
+    $("link[rel='prefetch']").each(function () {
         var elem = $(this);
         var modURL = elem.attr("href");
         var xhttp = new XMLHttpRequest();
