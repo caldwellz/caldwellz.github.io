@@ -10,16 +10,9 @@ zc.infoObfuscated = true;
 zc.loadModules = function () {
     $("link[rel='prefetch']").each(function () {
         var elem = $(this);
-        var modURL = elem.attr("href");
-        var xhttp = new XMLHttpRequest();
-        xhttp.responseType = "text";
-        xhttp.onreadystatechange = function () {
-            if (this.readyState === 4 && this.status === 200) {
-                elem.after(this.responseText);
-            }
-        };
-        xhttp.open("GET", modURL);
-        xhttp.send();
+        $.get(elem.attr("href"), function (data) {
+            elem.after(data);
+        });
     });
 };
 
