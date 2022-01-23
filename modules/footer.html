@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="styles/mod-footer.css">
 <footer>
-    Copyright &copy; 2018-2021 Zach Caldwell. All rights reserved.
+    Copyright &copy; 2018-<span class="currentYear"></span> Zach Caldwell. All rights reserved.
     <br />
     <a href="legal.html">References | Licenses | Privacy Policy</a>
 </footer>
@@ -12,6 +12,10 @@
     </a>
 </p>
 <script>
+    // Automatic copyright year
+    var currentYear = new Date().getFullYear();
+    $('.currentYear').text(currentYear);
+
     // Since modules are loaded async and general functions are guaranteed
     // to already be present, I think this is actually the cleanest solution
     // vs having an event listener specifically for this, or an external script
