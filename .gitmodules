@@ -1,14 +1,8 @@
 [submodule "xelandria"]
 	path = webprojects/xelandria
-	url = https://github.com/zc101/xelandria.git
+	url = https://github.com/caldwellz/xelandria.git
 	branch = master
-[submodule "ubberon"]
-	path = webprojects/ubberon
-	url = https://github.com/zc101/ubberon.git
+[submodule "webprojects/project-zorg"]
+	path = webprojects/project-zorg
+	url = https://github.com/caldwellz/project-zorg.git
 	branch = master
-[submodule "crosswyrd"]
-	path = webprojects/crosswyrd
-	url = https://github.com/zc101/crosswyrd.git
-[submodule "webprojects/borsippia"]
-	path = webprojects/borsippia
-	url = https://github.com/zc101/borsippia.git
