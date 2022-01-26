@@ -42,7 +42,6 @@
     margin: 0px 0px 2px 0px;
     transition: max-height 0.3s ease;
     transition: border-top-width 0.0s linear;
-    overflow: hidden;
 }
 
 .accordion-item figcaption {
@@ -83,7 +82,6 @@
     background-color: #0277bd;
 }
 
-
 .accordion-item input[type=submit]:hover,
 .accordion-item input[type=submit]:active {
     background-color: #57a0d3;
@@ -93,4 +91,5 @@
     width: 97%;
     margin: 0.2rem auto 0.2rem auto;
     text-align: justify;
+    overflow-x: auto;
 }
