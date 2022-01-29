@@ -81,10 +81,14 @@ table {
     border: 2px solid black;
 }
 
-table td {
+table th, table td {
     border: 1px solid black;
     padding-left: 4px;
     padding-right: 4px;
+}
+
+table thead {
+    text-align: center;
 }
 
 .justify-box {
