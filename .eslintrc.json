@@ -1,0 +1,43 @@
+{
+  "env": {
+    "browser": true,
+    "es2017": true, // For async/await
+    "node": true    // Used as the generator
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:import/recommended",
+    "plugin:json/recommended-with-comments", // Occasionally JSON comments are useful...
+    "plugin:jsx-a11y/recommended",
+    "plugin:promise/recommended",
+    "plugin:react/recommended",
+    "semistandard"
+  ],
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "ecmaVersion": 8,
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "requireConfigFile": false,
+    "babelOptions": {
+      "presets": ["@babel/preset-react"]
+    }
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  // Some of these are already auto-ignored by ESLint, but we'll be explicit
+  "ignorePatterns": [".cache", "classic", "node_modules", "public"],
+  "rules": {
+    // Recommend using async/await
+    "promise/prefer-await-to-then": "warn",
+    "promise/prefer-await-to-callbacks": "warn"
+  },
+  // From https://www.gatsbyjs.com/docs/how-to/custom-configuration/eslint/
+  "globals": {
+    "__PATH_PREFIX__": true
+  }
+}
