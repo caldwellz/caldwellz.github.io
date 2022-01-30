@@ -29,6 +29,11 @@
   "settings": {
     "react": {
       "version": "detect"
+    },
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx"]
+      }
     }
   },
   // Some of these are already auto-ignored by ESLint, but we'll be explicit
