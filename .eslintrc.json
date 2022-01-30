@@ -11,7 +11,9 @@
     "plugin:jsx-a11y/recommended",
     "plugin:promise/recommended",
     "plugin:react/recommended",
-    "semistandard"
+    "semistandard",
+    "standard-jsx",
+    "standard-react"
   ],
   "parser": "@babel/eslint-parser",
   "parserOptions": {
