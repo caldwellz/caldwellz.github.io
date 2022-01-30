@@ -11,10 +11,10 @@ import 'bootstrap';
 
 const Layout = ({ children }) => {
   return (
-    <div id="layout">
+    <div id='layout'>
       <Header />
       <Navbar />
-      <main className="container">
+      <main className='container'>
         {children}
       </main>
       <Footer />
