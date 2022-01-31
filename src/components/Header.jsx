@@ -1,9 +1,19 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const Header = () => {
+import Navigation from './Navigation';
+
+const Header = ({ children }) => {
   return (
-    <header />
+    <header className='sticky-sm-top'>
+      <Navigation />
+      {children}
+    </header>
   );
+};
+
+Header.propTypes = {
+  children: PropTypes.node
 };
 
 export default Header;
