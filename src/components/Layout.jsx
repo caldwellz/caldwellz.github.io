@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { Container } from 'react-bootstrap';
 import Footer from './Footer';
 import Header from './Header';
 
@@ -12,9 +11,7 @@ const Layout = ({ children }) => {
   return (
     <div id='layout'>
       <Header />
-      <Container>
-        {children}
-      </Container>
+      {children}
       <Footer />
     </div>
   );
