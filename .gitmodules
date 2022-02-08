@@ -1,8 +1,8 @@
-[submodule "xelandria"]
+[submodule "classic/webprojects/xelandria"]
 	path = classic/webprojects/xelandria
 	url = https://github.com/caldwellz/xelandria.git
 	branch = master
-[submodule "project-zorg"]
+[submodule "classic/webprojects/project-zorg"]
 	path = classic/webprojects/project-zorg
 	url = https://github.com/caldwellz/project-zorg.git
 	branch = master
