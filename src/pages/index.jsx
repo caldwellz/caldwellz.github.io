@@ -2,10 +2,18 @@ import React from 'react';
 
 import AspectedFrame from '../components/AspectedFrame';
 import Layout from '../components/Layout';
+import ProjectGroup from '../components/ProjectGroup';
 import Section from '../components/Section';
 
+import portfolio from '../data/portfolio.json';
 import profilePicture from '../images/profile-rounded-2022.png';
 import ResumeLinks from '../data/ResumeLinks';
+
+const portfolioGroupColors = {
+  Professional: 'var(--bs-yellow)',
+  Personal: 'var(--bs-primary)',
+  Academic: 'var(--bs-green)'
+};
 
 const IndexPage = () => {
   return (
@@ -18,7 +26,17 @@ const IndexPage = () => {
         </div>
       </Section>
       <Section title='About Me' />
-      <Section title='My Portfolio' />
+      <Section title='My Portfolio'>
+        {Object.keys(portfolio).map((group, i) => (
+          <ProjectGroup
+            bgColor={portfolioGroupColors[group]}
+            key={i}
+            title={group}
+          >
+            {portfolio[group]}
+          </ProjectGroup>
+        ))}
+      </Section>
       <Section title='My Résumé' id='my-resume'>
         <AspectedFrame title='Zach`s Resumé' src={ResumeLinks.getPreview('PDF')}>
           <p className='text-center'>
