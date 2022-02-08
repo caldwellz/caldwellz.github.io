@@ -65,7 +65,9 @@ const IndexPage = () => {
           </p>
         </AspectedFrame>
       </Section>
-      <Section title='Contact Me' />
+      <Section title='Contact Me'>
+        <AspectedFrame title='Contact Me' src='https://docs.google.com/forms/d/e/1FAIpQLSc6o16QyDB1-iig2rZEYtfPn2GDZ_ib_NGB7cjhRVUlStxTUw/viewform?embedded=true' />
+      </Section>
     </Layout>
   );
 };
