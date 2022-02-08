@@ -35,7 +35,7 @@ const Section = (props) => {
   }
 
   return (
-    <section id={sectionId} className='pt-4 pb-5' style={sectionStyle}>
+    <section id={sectionId} className='py-3' style={sectionStyle}>
       <Container>
         {heading}
         {props.children}

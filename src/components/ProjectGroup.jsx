@@ -6,7 +6,7 @@ import ProjectCard from './ProjectCard';
 const ProjectGroup = (props) => {
   return (
     <div>
-      <h3 className={'pt-3 text-decoration-underline text-' + props.titleAlign}>{props.title}</h3>
+      <h3 className={'pt-4 text-decoration-underline text-' + props.titleAlign}>{props.title}</h3>
       {/* A CardGroup is not used here because it would override the needed flex parameters */}
       <div className='d-flex row justify-content-center'>
         {props.children.map((project, i) => (
