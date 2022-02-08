@@ -21,8 +21,9 @@ const Section = (props) => {
   };
 
   // Add a scroll margin so sections won't hide under the sticky page header
-  const stickyHeader = document.querySelector('header');
-  sectionStyle.scrollMarginTop = ((stickyHeader && stickyHeader.offsetHeight) || props.defaultScrollMargin) + 'px';
+  // const stickyHeader = document.querySelector('header');
+  // sectionStyle.scrollMarginTop = ((stickyHeader && stickyHeader.offsetHeight) || props.defaultScrollMargin) + 'px';
+  sectionStyle.scrollMarginTop = props.defaultScrollMargin + 'px';
 
   let heading;
   if (props.title) {
