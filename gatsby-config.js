@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: '/public',
   siteMetadata: {
     title: 'Zach Caldwell - ePortfolio',
     siteUrl: 'http://www.zachc.cf'
