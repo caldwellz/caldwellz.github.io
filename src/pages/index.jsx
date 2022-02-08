@@ -25,7 +25,20 @@ const IndexPage = () => {
           <h5>Full-Stack Software Engineer and IT Consultant</h5>
         </div>
       </Section>
-      <Section title='About Me' />
+      <Section title='About Me'>
+        <p>
+          User-oriented technology consultant with <strong>3+ years</strong> of professional IT experience,
+          1 of which has been focused primarily on Software Engineering.
+          I've worked with small startups, large companies, and non-profit organizations of all sizes.
+          I also have a <strong>Bachelor of Science degree</strong> in Computer Information Technology from Brigham Young University - Idaho.
+          {' '}<a href='https://www.linkedin.com/in/zach-caldwell-ba2069127/'><strong>See my LinkedIn profile</strong></a> for more details.
+        </p>
+        <p>
+          I`m available for consulting and/or hire (<a href='#contact-me'><strong>contact me below!</strong></a>),
+          and am eligible to work with any U.S. company without requiring sponsorship.
+          I prefer to work remotely, but am also open to discussing assisted relocation.
+        </p>
+      </Section>
       <Section title='My Portfolio'>
         {Object.keys(portfolio).map((group, i) => (
           <ProjectGroup
