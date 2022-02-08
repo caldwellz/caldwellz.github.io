@@ -30,9 +30,10 @@ const Navigation = (props) => {
             </a>
           </Nav>
           <Nav variant='pills' className='ms-auto justify-content-end'>
-            <Nav.Link href='#about-me'>About Me</Nav.Link>
-            <Nav.Link href='#portfolio'>Portfolio</Nav.Link>
-            <Nav.Link href='#contact'>Contact</Nav.Link>
+            <Nav.Link href='#about-me'>About</Nav.Link>
+            <Nav.Link href='#my-portfolio'>Portfolio</Nav.Link>
+            <Nav.Link href='#my-resume'>Résumé</Nav.Link>
+            <Nav.Link href='#contact-me'>Contact</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
