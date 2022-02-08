@@ -44,9 +44,9 @@ const ProjectCard = (props) => {
   }
 
   return (
-    <Card className={'col m-' + props.margin} style={cardStyle}>
+    <Card className={'col p-0 m-' + props.margin} style={cardStyle}>
       {/* Title, live link and description */}
-      <Card.Body>
+      <Card.Body className='pb-0'>
         <Card.Title className={'text-' + props.titleAlign}>{props.title}</Card.Title>
         {liveLink}
         <Card.Text>
@@ -54,14 +54,8 @@ const ProjectCard = (props) => {
         </Card.Text>
       </Card.Body>
 
-      {/* Source link(s) that were processed above */}
-      <div className='px-3 py-2 border-top border-bottom border-dark'>
-        Source:{' '}
-        {sourceLinks}
-      </div>
-
       {/* Lang and other tags */}
-      <Card.Footer className='px-2'>
+      <div className='px-2 py-2'>
         <Badge
           pill
           className={'mx-' + props.tagSpacing}
@@ -81,7 +75,13 @@ const ProjectCard = (props) => {
             {tag}
           </Badge>
         ))}
-      </Card.Footer>
+      </div>
+
+      {/* Source link(s) that were processed above */}
+      <div className='px-3 py-2 border-top border-dark'>
+        Source:{' '}
+        {sourceLinks}
+      </div>
     </Card>
   );
 };
