@@ -5,11 +5,11 @@ import Layout from '../components/Layout';
 import ProjectGroup from '../components/ProjectGroup';
 import Section from '../components/Section';
 
-import portfolio from '../data/portfolio.json';
 import profilePicture from '../images/profile-rounded-2022.png';
+import projects from '../data/projects.json';
 import ResumeLinks from '../data/ResumeLinks';
 
-const portfolioGroupColors = {
+const projectGroupColors = {
   Professional: 'var(--bs-yellow)',
   Personal: 'var(--bs-primary)',
   Academic: 'var(--bs-green)'
@@ -39,14 +39,14 @@ const IndexPage = () => {
           I prefer to work remotely, but am also open to discussing assisted relocation.
         </p>
       </Section>
-      <Section title='My Portfolio'>
-        {Object.keys(portfolio).map((group, i) => (
+      <Section title='My Projects'>
+        {Object.keys(projects).map((group, i) => (
           <ProjectGroup
-            bgColor={portfolioGroupColors[group]}
+            bgColor={projectGroupColors[group]}
             key={i}
             title={group}
           >
-            {portfolio[group]}
+            {projects[group]}
           </ProjectGroup>
         ))}
       </Section>
