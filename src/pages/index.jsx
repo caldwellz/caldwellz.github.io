@@ -27,8 +27,7 @@ const IndexPage = () => {
       </Section>
       <Section title='About Me'>
         <p>
-          User-oriented technology consultant with <strong>3+ years</strong> of professional IT experience,
-          1 of which has been focused primarily on Software Engineering.
+          User-oriented technology consultant with <strong>4+ years</strong> of professional IT experience, with <strong>1 year</strong> in Software Engineering specifically.
           I've worked with small startups, large companies, and non-profit organizations of all sizes.
           I also have a <strong>Bachelor of Science degree</strong> in Computer Information Technology from Brigham Young University - Idaho.
           {' '}<a href='https://www.linkedin.com/in/zach-caldwell-ba2069127/'><strong>See my LinkedIn profile</strong></a> for more details.
