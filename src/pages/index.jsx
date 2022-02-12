@@ -34,8 +34,7 @@ const IndexPage = () => {
           {' '}<a href='https://www.linkedin.com/in/zach-caldwell-ba2069127/'><strong>See my LinkedIn profile</strong></a> for more details.
         </p>
         <p>
-          I`m available for consulting and/or hire (<a href='#contact-me'><strong>contact me below!</strong></a>),
-          and am eligible to work with any U.S. company without requiring sponsorship.
+          I`m available for consulting and/or hire in the U.S. without requiring sponsorship; <a href='https://www.upwork.com/freelancers/~0130c0bf88105e61a3'><strong>visit my Upwork page</strong></a> or <a href='#contact-me'><strong>contact me below</strong></a>!
           I prefer to work remotely, but am also open to discussing assisted relocation.
         </p>
       </Section>
