@@ -27,14 +27,14 @@ const IndexPage = () => {
       </Section>
       <Section title='About Me'>
         <p>
-          User-oriented technology consultant with <strong>4+ years</strong> of professional IT experience, with <strong>1 year</strong> in Software Engineering specifically.
+          User-oriented technology consultant with <strong>5+ years</strong> of professional IT experience, with <strong>2+ years</strong> specifically in Software Engineering (Node.js / React / AWS).
           I've worked with small startups, large companies, and non-profit organizations of all sizes.
           I also have a <strong>Bachelor of Science degree</strong> in Computer Information Technology from Brigham Young University - Idaho.
           {' '}<a href='https://www.linkedin.com/in/zach-caldwell-ba2069127/'><strong>See my LinkedIn profile</strong></a> for more details.
         </p>
         <p>
           I`m available for consulting and/or hire in the U.S. without requiring sponsorship; <a href='https://www.upwork.com/freelancers/~0130c0bf88105e61a3'><strong>visit my Upwork page</strong></a> or <a href='#contact-me'><strong>contact me below</strong></a>!
-          I prefer to work remotely, but am also open to discussing assisted relocation.
+          I prefer to work completely remote, but am also open to hybrid work environments in Northern Utah.
         </p>
       </Section>
       <Section title='My Projects'>
