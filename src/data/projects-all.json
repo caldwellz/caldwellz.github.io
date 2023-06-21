@@ -27,6 +27,28 @@
         "Koa",
         "MongoDB"
       ]
+    },
+    {
+      "title": "YCC Check-In (Demo)",
+      "desc": "Visitor check-in for a non-profit organization.",
+      "links": [
+        {
+          "type": "live",
+          "url": "https://app-demo.tk/ycc/office.html"
+        },
+        {
+          "title": "Not (yet) available publicly",
+          "type": "source",
+          "url": ""
+        }
+      ],
+      "lang": "Full-Stack",
+      "tags": [
+        "Bootstrap",
+        "Node.js",
+        "Express",
+        "MySQL"
+      ]
     }
   ],
   "Personal": [
@@ -73,6 +95,28 @@
       ]
     },
     {
+      "title": "Goodly Albums",
+      "desc": "Family photo-sharing site.",
+      "links": [
+        {
+          "type": "live",
+          "url": "https://goodly-albums.ga/"
+        },
+        {
+          "title": "GitHub",
+          "type": "source",
+          "url": "https://github.com/caldwellz/goodly-albums"
+        }
+      ],
+      "lang": "Full-Stack",
+      "tags": [
+        "Bootstrap",
+        "Node.js",
+        "Express",
+        "MySQL"
+      ]
+    },
+    {
       "title": "Xelandria",
       "desc": "2D browser-based game engine experiment.",
       "links": [
@@ -115,8 +159,26 @@
       ]
     },
     {
+      "title": "Lys3D",
+      "desc": "3D game engine experiment.",
+      "links": [
+        {
+          "title": "GitHub",
+          "type": "source",
+          "url": "https://github.com/caldwellz/lys3d"
+        }
+      ],
+      "lang": "C / C++",
+      "tags": [
+        "OpenGL",
+        "SDL",
+        "Meson",
+        "Doxygen"
+      ]
+    },
+    {
       "title": "Renity",
-      "desc": "2D desktop/mobile game engine experiment.",
+      "desc": "2D game engine experiment.",
       "links": [
         {
           "title": "GitHub",
