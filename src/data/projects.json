@@ -1,6 +1,28 @@
 {
   "Professional": [
     {
+      "title": "PolicyScout Rx Card Microservice",
+      "desc": "Generates pharmacy cards for new customers. I did the backend development and solved key problems including PDF generation and linking the card info to the company's internal customer-interaction system (which I also developed).",
+      "links": [
+        {
+          "type": "live",
+          "url": "https://policyscout.com/rx/download"
+        },
+        {
+          "title": "Not publicly available",
+          "type": "source",
+          "url": ""
+        }
+      ],
+      "lang": "Back-End",
+      "tags": [
+        "Node.js",
+        "Serverless Framework",
+        "AWS Lambda",
+        "DynamoDB"
+      ]
+    },
+    {
       "title": "YardSearch",
       "desc": "Offers junkyard data aggregation and vehicle searching.",
       "links": [
@@ -68,6 +90,7 @@
       ],
       "lang": "Front-End",
       "tags": [
+        "Pure HTML/CSS/JS",
         "jQuery",
         "GitHub Pages"
       ]
