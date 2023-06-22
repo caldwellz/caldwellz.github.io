@@ -4,6 +4,6 @@
 npx lint-staged
 
 # Remove files but not subdirs for a semi-clean rebuild
-rm -f public/*.*
+# rm -f public/*.*
 npm run build
 git add public
