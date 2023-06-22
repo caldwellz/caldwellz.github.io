@@ -13,4 +13,6 @@ npm install
 npm run develop
 ```
 
-The site should now be available at http://localhost:8000.
+The site should now locally available at [http://localhost:8000/](http://localhost:8000/).
+When finished making changes, simply commit them and the on-commit hooks will automatically lint, rebuild, and add the built production files (in public/) to the commit.
+If the linting or build fails, the commit will be undone - just fix the issues and try committing again.
