@@ -9,8 +9,8 @@ To run the site in developer mode:
 ```shell
 git clone https://github.com/caldwellz/caldwellz.github.io
 cd caldwellz.github.io
-npm install
-npm run develop
+yarn install
+yarn run develop
 ```
 
 The site should now locally available at [http://localhost:8000/](http://localhost:8000/).
