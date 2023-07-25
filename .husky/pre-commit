@@ -3,7 +3,7 @@
 
 npx lint-staged
 
-# Remove files but not subdirs for a semi-clean rebuild
-# rm -f public/*.*
+# Remove stale page scripts for a semi-clean rebuild
+rm -f public/*.js public/*.js.*
 npm run build
 git add public
