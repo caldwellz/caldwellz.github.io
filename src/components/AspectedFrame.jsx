@@ -7,7 +7,7 @@ const AspectedFrame = (props) => {
   // Ratio component, because that apparently caps the ratio at 100%.
   const ratioStyle = {
     '--bs-aspect-ratio': (props.ratio * 100) + '%',
-    'max-width': props.maxWidth
+    maxWidth: props.maxWidth
   };
 
   return (
