@@ -138,23 +138,6 @@
       ]
     },
     {
-      "title": "Renity",
-      "desc": "2D desktop/mobile game engine experiment.",
-      "links": [
-        {
-          "title": "GitHub",
-          "type": "source",
-          "url": "https://github.com/caldwellz/renity"
-        }
-      ],
-      "lang": "C / C++",
-      "tags": [
-        "SDL",
-        "Meson",
-        "Doxygen"
-      ]
-    },
-    {
       "title": "YAMS Emulator",
       "desc": "Emulator for an in-development m68k-based retrocomputer.",
       "links": [

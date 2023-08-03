@@ -27,8 +27,8 @@ const IndexPage = () => {
       </Section>
       <Section title='About Me'>
         <p>
-          User-oriented technical consultant with <strong>10+ years</strong> of personal & consulting software projects <a href='https://github.com/caldwellz'><strong>ready to demonstrate</strong></a>, as well as <strong>6+ years of professional software development</strong> and related IT experience.
-          I'm strongest with <strong>Node.js, React, AWS</strong> cloud technologies, plain <strong>HTML5 / CSS3 / JS (ES6+), C++, DynamoDB, MongoDB,</strong> and <strong>MySQL</strong> (MariaDB), but am comfortable with a wide variety of languages, environments, cloud platforms, and relational / document / key-value databases.
+          User-oriented technical consultant with <strong>6+ years</strong> of software projects <a href='https://github.com/caldwellz'><strong>ready to demonstrate</strong></a>, as well as <strong>5+ years</strong> of professional software development and IT experience.
+          I'm strongest with <strong>Node.js, React, AWS</strong> cloud technologies, plain <strong>HTML5 / CSS3 / JS (ES6+), C++, DynamoDB, MongoDB,</strong> and <strong>MySQL</strong> (MariaDB), but am comfortable working with a wide variety of languages, environments, cloud platforms, and relational / document / key-value databases.
         </p>
         <p>
           I've worked with small startups, large companies, and non-profit organizations of all sizes.
