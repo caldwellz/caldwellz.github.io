@@ -1,20 +1,42 @@
 {
   "Professional": [
     {
-      "title": "PolicyScout Rx Card Microservice",
-      "desc": "Generates pharmacy cards for new customers. I did the backend development and solved key problems including PDF generation and linking the card info to the company's internal customer-interaction system (which I also developed).",
+      "title": "EventManager Microservice",
+      "desc": "Receives and processes loan events from client-side software for various new web-based data analysis displays. I developed both the data model and all of the API code.",
+      "links": [
+        {
+          "type": "live",
+          "url": "https://dev-ui.ltk.ai/"
+        },
+        {
+          "title": "Lender Toolkit",
+          "type": "company",
+          "url": "https://www.lendertoolkit.com/"
+        }
+      ],
+      "lang": "Backend",
+      "tags": [
+        "Node.js",
+        "DynamoDB",
+        "Docker",
+        "Terraform"
+      ]
+    },
+    {
+      "title": "Rx Card Microservice",
+      "desc": "Generates pharmacy cards for new customers. I did the backend development and solved key problems including PDF generation and linking the card info to the company's internal customer-interaction API (which I also developed).",
       "links": [
         {
           "type": "live",
           "url": "https://policyscout.com/rx/download"
         },
         {
-          "title": "Not publicly available",
-          "type": "source",
-          "url": ""
+          "title": "PolicyScout",
+          "type": "company",
+          "url": "https://policyscout.com"
         }
       ],
-      "lang": "Back-End",
+      "lang": "Backend",
       "tags": [
         "Node.js",
         "Serverless Framework",
@@ -24,21 +46,16 @@
     },
     {
       "title": "YardSearch",
-      "desc": "Offers junkyard data aggregation and vehicle searching.",
+      "desc": "Offers junkyard data aggregation and vehicle searching. I developed both a front-end and a back-end for the client.",
       "links": [
         {
           "type": "live",
           "url": "https://yardsearch.tk/"
         },
         {
-          "title": "Front-End",
-          "type": "source",
-          "url": "https://github.com/caldwellz/yardsearch-frontend"
-        },
-        {
-          "title": "Back-End",
-          "type": "source",
-          "url": "https://github.com/caldwellz/yardsearch-backend"
+          "title": "Ensign Technical Solutions",
+          "type": "company",
+          "url": ""
         }
       ],
       "lang": "Full-Stack",
@@ -47,7 +64,8 @@
         "Bootstrap",
         "Node.js",
         "Koa",
-        "MongoDB"
+        "MongoDB",
+        "Web Scraping"
       ]
     }
   ],
@@ -96,6 +114,29 @@
       ]
     },
     {
+      "title": "CarTracker",
+      "desc": "Tracks changes (particularly price drops) to local classified listings for certain types of automobiles. The backend data API is now working for the types of data analysis I wanted to do; a frontend is in progress.",
+      "links": [
+        {
+          "type": "live",
+          "url": "https://app-demo.tk/api/cartracker/stats/all"
+        },
+        {
+          "title": "GitHub",
+          "type": "source",
+          "url": "https://github.com/caldwellz/CarTracker"
+        }
+      ],
+      "lang": "Full-Stack",
+      "tags": [
+        "Node.js",
+        "Express",
+        "React",
+        "Vite",
+        "Web Scraping"
+      ]
+    },
+    {
       "title": "Xelandria",
       "desc": "2D browser-based game engine experiment.",
       "links": [
@@ -111,7 +152,6 @@
       ],
       "lang": "Front-End",
       "tags": [
-        "AJAX",
         "PixiJS",
         "WebGL"
       ]

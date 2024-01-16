@@ -10,36 +10,42 @@ const ProjectCard = (props) => {
     minWidth: props.minWidth
   };
 
-  // Extract and process two types of links: Live (up to one) and Source (any number, with padding between)
-  let liveLink;
+  // Extract and process three types of links: Live (up to one), Company (up to one), and Source (any number, with padding between)
+  let liveLink; let companyLink; let item; let padding = ''; let sourceLinkCount = 0;
   const sourceLinks = [];
-  let sourceLinkCount = 0;
   for (const link of props.links) {
-    if (link.type === 'live') {
-      liveLink = <Card.Link className='text-dark' href={link.url}>{link.url}</Card.Link>;
-      continue;
-    }
-    if (link.type === 'source') {
-      let padding = '';
-      if (sourceLinkCount > 0) {
-        padding = ', ';
-      }
-      let item;
-      if (link.url) {
-        item = (
-          <span className='text-dark'>
-            {padding}
-            <Card.Link className='text-dark' href={link.url}>
-              {link.title}
-            </Card.Link>
-          </span>
-        );
-      } else {
-        item = <span className='text-dark'>{padding}{link.title}</span>;
-      }
-      sourceLinks.push(item);
-      ++sourceLinkCount;
-      continue;
+    switch (link.type) {
+      case 'live':
+        liveLink = <Card.Link className='text-dark' href={link.url}>{link.url}</Card.Link>;
+        continue;
+      case 'company':
+        if (link.url) {
+          companyLink = <Card.Link className='text-dark' href={link.url}>{link.title}</Card.Link>;
+        } else {
+          companyLink = <span className='text-dark'>{link.title}</span>;
+        }
+        continue;
+      case 'source':
+        if (sourceLinkCount > 0) {
+          padding = ', ';
+        }
+        if (link.url) {
+          item = (
+            <span className='text-dark'>
+              {padding}
+              <Card.Link key={sourceLinks.length} className='text-dark' href={link.url}>
+                {link.title}
+              </Card.Link>
+            </span>
+          );
+        } else {
+          item = <span className='text-dark'>{padding}{link.title}</span>;
+        }
+        sourceLinks.push(item);
+        ++sourceLinkCount;
+        continue;
+      default:
+        continue;
     }
   }
 
@@ -77,10 +83,10 @@ const ProjectCard = (props) => {
         ))}
       </div>
 
-      {/* Source link(s) that were processed above */}
+      {/* Source or company link(s) that were processed above */}
       <div className='px-3 py-2 border-top border-dark'>
-        Source:{' '}
-        {sourceLinks}
+        {companyLink ? 'Company: ' : 'Source: '}
+        {companyLink || sourceLinks}
       </div>
     </Card>
   );
