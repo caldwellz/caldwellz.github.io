@@ -8,7 +8,7 @@ import Section from '../components/Section';
 import projects from '../data/projects.json';
 import ResumeLinks from '../data/ResumeLinks';
 
-const profilePicture = 'images/profile-rounded-2022.png';
+const profilePicture = 'images/profile-rounded-2023.png';
 const projectGroupColors = {
   Professional: 'rgb(191, 162, 8)', // Formerly var(--bs-yellow)
   Personal: 'rgb(33, 150, 243)', // Same as var(--bs-primary)
@@ -27,11 +27,11 @@ const IndexPage = () => {
       </Section>
       <Section title='About Me'>
         <p>
-          User-oriented technical consultant with <strong>6+ years</strong> of software projects <a href='https://github.com/caldwellz'><strong>ready to demonstrate</strong></a>, as well as <strong>5+ years</strong> of professional software development and IT experience.
-          I'm strongest with <strong>Node.js, React, AWS</strong> cloud technologies, plain <strong>HTML5 / CSS3 / JS (ES6+), C++, DynamoDB, MongoDB,</strong> and <strong>MySQL</strong> (MariaDB), but am comfortable working with a wide variety of languages, environments, cloud platforms, and relational / document / key-value databases.
+          User-oriented technical consultant with <strong>8+ years</strong> of software projects <a href='https://github.com/caldwellz'><strong>ready to demonstrate</strong></a>, as well as <strong>7+ years</strong> of professional software engineering and technical architecture / operations experience.
+          I'm strongest with <strong>Node.js, React, AWS</strong> cloud technologies, vanilla <strong>HTML5 / CSS3 / JS (ES6+), C++, DynamoDB, MongoDB,</strong> and <strong>MySQL</strong> (MariaDB), but am comfortable working with a wide variety of languages, environments, cloud platforms, and relational / document / key-value databases.
         </p>
         <p>
-          I've worked with small startups, large companies, and non-profit organizations of all sizes.
+          I've worked with small startups, large companies, and non-profit organizations of all sizes, both as an employee and as a consultant.
           {' '}<a href='https://www.linkedin.com/in/zach-caldwell-ba2069127/'><strong>See my LinkedIn profile</strong></a> for more details.
           I also have a <strong>Bachelor of Science</strong> degree in Computer Information Technology from Brigham Young University - Idaho, covering mainly <strong>Computer Science and Computer Engineering</strong> topics such as web & embedded development, advanced algorithms and object-oriented architecture, and the design of CPUs, operating systems, and computer networks.
         </p>
