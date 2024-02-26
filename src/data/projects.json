@@ -15,12 +15,7 @@
         }
       ],
       "lang": "Backend",
-      "tags": [
-        "Node.js",
-        "DynamoDB",
-        "Docker",
-        "Terraform"
-      ]
+      "tags": ["Node.js", "DynamoDB", "Docker", "Terraform"]
     },
     {
       "title": "Rx Card Microservice",
@@ -37,12 +32,7 @@
         }
       ],
       "lang": "Backend",
-      "tags": [
-        "Node.js",
-        "Serverless Framework",
-        "AWS Lambda",
-        "DynamoDB"
-      ]
+      "tags": ["Node.js", "Serverless Framework", "AWS Lambda", "DynamoDB"]
     },
     {
       "title": "YardSearch",
@@ -50,7 +40,7 @@
       "links": [
         {
           "type": "live",
-          "url": "https://yardsearch.tk/"
+          "url": "https://yardsearch.getresults.top/"
         },
         {
           "title": "Ensign Technical Solutions",
@@ -76,7 +66,7 @@
       "links": [
         {
           "type": "live",
-          "url": "http://www.zachc.cf/"
+          "url": "http://caldwellz.github.io/"
         },
         {
           "title": "GitHub",
@@ -85,12 +75,7 @@
         }
       ],
       "lang": "Front-End",
-      "tags": [
-        "React",
-        "Gatsby",
-        "Bootstrap",
-        "GitHub Pages"
-      ]
+      "tags": ["React", "Gatsby", "Bootstrap", "GitHub Pages"]
     },
     {
       "title": "Classic ePortfolio",
@@ -98,7 +83,7 @@
       "links": [
         {
           "type": "live",
-          "url": "http://www.zachc.cf/classic/"
+          "url": "http://caldwellz.github.io/classic/"
         },
         {
           "title": "GitHub",
@@ -107,11 +92,7 @@
         }
       ],
       "lang": "Front-End",
-      "tags": [
-        "Pure HTML/CSS/JS",
-        "jQuery",
-        "GitHub Pages"
-      ]
+      "tags": ["Pure HTML/CSS/JS", "jQuery", "GitHub Pages"]
     },
     {
       "title": "CarTracker",
@@ -119,7 +100,7 @@
       "links": [
         {
           "type": "live",
-          "url": "https://app-demo.tk/api/cartracker/stats/all"
+          "url": "https://api.fullstack-dev.top/cartracker/stats/all"
         },
         {
           "title": "GitHub",
@@ -128,13 +109,7 @@
         }
       ],
       "lang": "Full-Stack",
-      "tags": [
-        "Node.js",
-        "Express",
-        "React",
-        "Vite",
-        "Web Scraping"
-      ]
+      "tags": ["Node.js", "Express", "React", "Vite", "Web Scraping"]
     },
     {
       "title": "Xelandria",
@@ -142,7 +117,7 @@
       "links": [
         {
           "type": "live",
-          "url": "http://www.zachc.cf/classic/webprojects/xelandria/"
+          "url": "http://caldwellz.github.io/classic/webprojects/xelandria/"
         },
         {
           "title": "GitHub",
@@ -151,10 +126,7 @@
         }
       ],
       "lang": "Front-End",
-      "tags": [
-        "PixiJS",
-        "WebGL"
-      ]
+      "tags": ["PixiJS", "WebGL"]
     },
     {
       "title": "Project Zorg",
@@ -162,7 +134,7 @@
       "links": [
         {
           "type": "live",
-          "url": "http://www.zachc.cf/classic/webprojects/project-zorg/"
+          "url": "http://caldwellz.github.io/classic/webprojects/project-zorg/"
         },
         {
           "title": "GitHub",
@@ -171,11 +143,7 @@
         }
       ],
       "lang": "Front-End",
-      "tags": [
-        "AJAX",
-        "LocalStorage",
-        "Unicode"
-      ]
+      "tags": ["AJAX", "LocalStorage", "Unicode"]
     },
     {
       "title": "YAMS Emulator",
@@ -188,11 +156,7 @@
         }
       ],
       "lang": "C / C++",
-      "tags": [
-        "SDL",
-        "Meson",
-        "Doxygen"
-      ]
+      "tags": ["SDL", "Meson", "Doxygen"]
     },
     {
       "title": "Xeno",
@@ -205,9 +169,7 @@
         }
       ],
       "lang": "C / C++",
-      "tags": [
-        "SDL"
-      ]
+      "tags": ["SDL"]
     },
     {
       "title": "Jammy Dodge Rover",
@@ -216,13 +178,11 @@
         {
           "title": "Zip File",
           "type": "source",
-          "url": "http://www.zachc.cf/classic/eportfolio/electronics/RoverScripts.zip"
+          "url": "http://caldwellz.github.io/classic/eportfolio/electronics/RoverScripts.zip"
         }
       ],
       "lang": "Python",
-      "tags": [
-        "PyBluez"
-      ]
+      "tags": ["PyBluez"]
     }
   ],
   "Academic": [
@@ -232,7 +192,7 @@
       "links": [
         {
           "type": "live",
-          "url": "http://www.zachc.cf/classic/eportfolio/cit230/assignments/term-project/"
+          "url": "http://caldwellz.github.io/classic/eportfolio/cit230/assignments/term-project/"
         },
         {
           "title": "GitHub",
@@ -241,10 +201,7 @@
         }
       ],
       "lang": "Front-End",
-      "tags": [
-        "Google Maps",
-        "jQuery"
-      ]
+      "tags": ["Google Maps", "jQuery"]
     },
     {
       "title": "Tri-City Paper Pilots",
@@ -252,7 +209,7 @@
       "links": [
         {
           "type": "live",
-          "url": "http://www.zachc.cf/classic/eportfolio/cit230/assignments/weathersite/"
+          "url": "http://caldwellz.github.io/classic/eportfolio/cit230/assignments/weathersite/"
         },
         {
           "title": "GitHub",
@@ -269,7 +226,7 @@
       "links": [
         {
           "type": "live",
-          "url": "http://www.zachc.cf/classic/eportfolio/wdd330/"
+          "url": "http://caldwellz.github.io/classic/eportfolio/wdd330/"
         },
         {
           "title": "GitHub",
@@ -278,10 +235,7 @@
         }
       ],
       "lang": "Front-End",
-      "tags": [
-        "AJAX",
-        "LocalStorage"
-      ]
+      "tags": ["AJAX", "LocalStorage"]
     },
     {
       "title": "CS 124 (C++) Assignments",
@@ -346,9 +300,7 @@
         }
       ],
       "lang": "PL/SQL",
-      "tags": [
-        "Oracle Database"
-      ]
+      "tags": ["Oracle Database"]
     },
     {
       "title": "CS 112 (Python) Assignments",
